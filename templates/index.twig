@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Dylan Ramsey Web Developer </title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/vue.js"></script>
+</head>
+<body> 
+  <div class="container">
+    <nav class="navBar">
+      <ul class="navBarRoutes textShadow">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Services</a></li>
+        <li><a href="/">Portfolio</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Blog</a></li>
+      </ul>
+      <div class="searchAndSocial">
+        <div>
+          <input class="siteSearch" placeholder="Search">
+        </div>
+        <div class="socialIcons">
+          <div class="twitter">
+            <a href="https://twitter.com/DylanRamsey" target="_blank">
+              <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+                <path d="
+                  M 630, 425
+                  A 195, 195 0 0 1 331, 600
+                  A 142, 142 0 0 0 428, 570
+                  A  70,  70 0 0 1 370, 523
+                  A  70,  70 0 0 0 401, 521
+                  A  70,  70 0 0 1 344, 455
+                  A  70,  70 0 0 0 372, 460
+                  A  70,  70 0 0 1 354, 370
+                  A 195, 195 0 0 0 495, 442
+                  A  67,  67 0 0 1 611, 380
+                  A 117, 117 0 0 0 654, 363
+                  A  65,  65 0 0 1 623, 401
+                  A 117, 117 0 0 0 662, 390
+                  A  65,  65 0 0 1 630, 425
+                  Z"
+                  style="fill: white;"/>
+              </svg>
+            </a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/dylan-ramsey/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="hero">
+      <div class="heroContent">
+        <div class="heroMainContent">
+          <h1 class="textShadow">Dylan Ramsey</h1>
+          <div class="flex">
+            <h2 class="header-sub-title textShadow" id="word"></h2><h2 class="header-sub-title blink">|</h2>
+          </div>
+          <h3 class="textShadow">Sarasota, Fl</h3>          
+        </div>
+        <div class="heroSubContent">
+          <div class="flexAlignBase">
+            <h3 class="textShadow">Get in touch</h3>
+            <div class="envelopeIcon">
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 60" width="42" height="30">
+                <title>image</title>
+                <defs>
+                  <image width="78" height="60" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAA8CAMAAAD/nnzlAAAAAXNSR0IB2cksfwAAAEVQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////Up1zwgAAABd0Uk5TADB/nyC//88Q799AUKCwgNCvkHBgj29fTsFyAAACBUlEQVR4nK3X25KCMAyA4QClHEQRwX3/R13oiaRNQVpyszOr/PNhKwLAOkVZZU9ZgB5Ry1umaVWtu6e2jlhz/W21zfe4ryblAM/tT91C5rSvrfMCtQ6P3Nq6O9TZ6lxfnL//RKeXQOdkJ/JqwiyoyWX6Wrs9wO3hDJ9wm23PpfvafesC+oYl+gT6IqhcP2b4jK3u9xyMyesr3urQCXAOUn3W1tJcos/ZwMtZ36Xvm3C2IJfgQ7Ywd9mHbUzuoo/YuNyl9aU2NnfB59n43M8+3xbJWd9JL7DFcj/5Qls0B59Tn7HV5J+xHMzdsY+zHeRgOPSxtqPcoc/YJv+n+SBXyqjP2GTj7814ztQ4334l771eNOdqoc/amF4sp2vdyHx+xvZsmF4kV9rTNOu7BLbRXtJJj8+V+0nq9ZVfe9Bfb2qOiXtsztm2GcwHWM3LsozmLnVUL4U+LvfVx9s3zeGN7kg/xr3H5IhN+bxb3W52L/m+MOfZFOKDaxNeZ88X5AKbmmKu1Sl3zcd7hfr8HGOzx4lhEMztM/F5ObRDfh7so7m47WiQj+RSbNSHc2k24kO5VBv2dS4nk23IJ2kuzYZ8JJfzoBI+CKTbiM/k/At/qk/n8mzIp3PZNfMAWuvH4+A3+LpuUh17Ab9nBmib+2rbpUTcVtNbV9zke9sFfVRTnzlTpR5H/gH7/zXZD8bKxQAAAABJRU5ErkJggg=="/>
+                </defs>
+                <style>
+                </style>
+                <use id="Background" href="#img1" x="0" y="0"/>
+              </svg>
+            </div>
+          </div>
+          <div class="checkMeOut flex textShadow">
+            <a href="/#heroAnchor">
+              <h3>Check me out!</h3>
+            </a>
+            <a href="/#heroAnchor">
+              <div class="downCheveronLogo">
+                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38">
+                  <title>image</title>
+                  <style>
+                    .s0 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2 } 
+                  </style>
+                  <circle id="Layer" class="s0" cx="19" cy="19" r="18.2"/>
+                  <path id="Layer" class="s0" d="m26.3 18.9l-7.2 7.4-7.3-7.2"/>
+                  <path id="Layer" class="s0" d="m18.9 11.8l0.2 14.5"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <figure class="heroImage">
+        <img src="/assets/meanddata.jpg" alt="Picture of Dylan Ramsey and his dog">
+      </figure>
+    </main>
+    <section>
+      <div class="postHeroHeader centerText textShadow" id="heroAnchor">
+        <h3>I'm a Florida based developer, with work that reaches across the world 🌎</h3>
+        <h3>Here are a few of the largest companies I've worked with</h3>
+      </div>
+    </section>
+  </div>
+  <section>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="https://www.breezeline.com/" target="_blank">
+            <div class="breezelineLogo" aria-label="Breezeline Logo"></div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.islandfinpoke.com/" target="_blank">
+            <div class="islandfinLogo" aria-label="Islandfin Poke Logo"></div>
+          </a>
+        </div>
+        <div class="swiper-slide" aria-label="Borla Logo">
+          <a href="https://www.borla.com/" target="_blank">
+            <div class="borlaLogo"></div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://blackdogleashes.com/" target="_blank">
+            <div class="blackDogLeashesLogo"></div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://srqcustoms.com/" target="_blank">
+            <div class="srqCustomsLogo"></div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.rapv.com/" target="_blank">
+            <div class="rapvLogo"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="experience">
+    <div class="postHeroHeader centerText textShadow">
+      <h3>Here are a few great companies I've been employed with</h3>
+    </div>
+    <div id="vapp">
+      <div class="experienceCard flex">
+        <div class="employedBy">
+          <h5 v-for="employeers in employeers">
+
+          </h5>
+        </div>
+        <div class="employedDescription">
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe voluptas dicta magnam libero, facilis, cum voluptatibus accusantium consequatur, deleniti fugiat sit odit. Aliquid temporibus delectus placeat accusamus assumenda reprehenderit.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="postHeroHeader centerText textShadow">
+      <h3>These are some of my favorite projects I've worked on</h3>
+    </div>
+    <div class="swiper blogSwiper blogPost">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="blogCard">
+            <div class="blogCardImage breezelineBlog"></div>
+            <div class="blogCardContent">
+              <h4>Breezeline</h4>
+              <h5>Read More</h5>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="blogCard">
+            <div class="blogCardImage islandBlog"></div>
+            <div class="blogCardContent">
+              <h4>Island Fin Poke</h4>
+              <h5>Read More</h5>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="blogCard">
+            <div class="blogCardImage bdl"></div>
+            <div class="blogCardContent">
+              <h4>Black Dog Leashes</h4>
+              <h5>Read More</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justifyCenter">
+      <div class="button">
+        <p>View My Full Portfolio</p>
+      </div>
+    </div>
+    </section>
+    <section class="toolCardsSection container">
+      <h3 class="postHeroHeader centerText textShadow">
+        Here are some of the tools I craft with 
+      </h3>
+      <div class="toolCards">
+        <div class="toolCard">
+          <img src="/assets/html5logonoback.png" alt="HTML5 Logo">
+        </div>
+        <div class="toolCard">
+          <img src="/assets/css3.png" alt="CSS Logo">
+        </div>
+        <div class="toolCard">
+          <img src="/assets/javascript-logo.jpeg" alt="Javascript Logo">
+        </div>
+        <div class="toolCard">
+          <img src="/assets/php-logo.jpeg" alt="PHP Logo">
+        </div>
+      </div>
+      <div class="toolCards">
+        <div class="toolCard">
+          <img src="/assets/react-logo.jpeg" alt="React Logo">
+        </div>
+        <div class="toolCard">
+          <img src="/assets/vue-logo.jpeg" alt="Vue Logo">
+        </div>
+        <div class="toolCard">
+          <img src="/assets/jquery-logo.jpg" alt="jQuery Logo">
+        </div>
+        <div class="toolCard">
+          <img src="/assets/tailwind-logo.jpg" alt="Tailwind Logo">
+        </div>
+      </div>
+      <div class="toolCards">
+        <div class="toolCard">
+          <img src="/assets/sass-logo.jpg" alt="Sass Logo">
+        </div>
+        <div class="toolCard">
+          <img src="/assets/git-logo.jpg" alt="Git Logo">
+        </div>
+        <div class="toolCard">
+          <img src="/assets/wordpress-logo.jpg" alt="Wordpress Logo">
+        </div>
+        <div class="toolCard">
+          <img src="/assets/figma-logo.jpg" alt="Figma Logo">
+        </div>
+      </div>
+      <div class="flex justifyCenter">
+          <div class="button">
+            <p>View my full toolbox</p>
+          </div>
+      </div>
+    </section>
+    <section class="container">
+      <h3 class="postHeroHeader centerText textShadow">
+        All of my websites are...
+      </h3>
+      <div class="standards flex spaceInbetwen">
+        <div class="standard">
+          <h4 class="textShadow">Fully mobile responsive</h4>
+          <div class="mobileResponsive"></div>
+        </div>
+        <div class="standard">
+          <h4 class="textShadow">Accessible to all users</h4>
+          <div class="accessible"></div>
+        </div>
+        <div class="standard">
+          <h4 class="textShadow">Optimized to be lightning fast</h4>
+          <div class="optimized"></div>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="button">
+          Learn more about my standards
+        </div>
+      </div>
+    </section>
+    <section class="services container">
+      <div class="centerText">
+        <h3 class="textShadow">Ready to create something special together?</h3>
+        <h4 class="textShadow">Feel free to shoot an email over to me at dylanbradramsey@gmail.com</h4>
+        <h4 class="textShadow">Want to read more about what I do and my specialties in depth? </h4>
+        <h4 class="textShadow">Check out my services page</h4>
+      </div>
+      <div class="flex">
+        <div class="button">
+          Services
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h3 class="postHeroHeader centerText textShadow">
+        Some nice things cool people have said about me
+      </h3>
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial">
+              <h4 class="italic">"Dylan is really cool"</h4>
+              <p class="testimonialCopy">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis tortor ut nunc fermentum, 
+                eleifend consectetur dui aliquam. Cras porta elementum imperdiet. Donec volutpat lacus et dolor 
+                maximus gravida. Pellentesque feugiat dignissim mollis. In cursus ullamcorper mauris a fermentum.
+              </p>
+              <h5 class="italic">-CEO Man, Cool Company</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial">
+              <h4 class="italic">"Dylan is really cool"</h4>
+              <p class="testimonialCopy">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis tortor ut nunc fermentum, 
+                eleifend consectetur dui aliquam. Cras porta elementum imperdiet. Donec volutpat lacus et dolor 
+                maximus gravida. Pellentesque feugiat dignissim mollis. In cursus ullamcorper mauris a fermentum.
+              </p>
+              <h5 class="italic">-CEO Man, Cool Company</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial">
+              <h4 class="italic">"Dylan is really cool"</h4>
+              <p class="testimonialCopy">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis tortor ut nunc fermentum, 
+                eleifend consectetur dui aliquam. Cras porta elementum imperdiet. Donec volutpat lacus et dolor 
+                maximus gravida. Pellentesque feugiat dignissim mollis. In cursus ullamcorper mauris a fermentum.
+              </p>
+              <h5 class="italic">-CEO Man, Cool Company</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer container flex alignItemsCenter spaceInbetwen">
+      <div class="footerLeft">Copyright 2022 Dylan Ramsey</div>
+      <div class="footerRight flex alignItemsCenter">
+        <ul class="footerNavBarRoutes">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Portfolio</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Blog</a></li>
+        </ul>
+        <div class="socialIcons">
+          <div class="twitter">
+            <a href="https://twitter.com/DylanRamsey" target="_blank">
+            <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+              <path d="
+                M 630, 425
+                A 195, 195 0 0 1 331, 600
+                A 142, 142 0 0 0 428, 570
+                A  70,  70 0 0 1 370, 523
+                A  70,  70 0 0 0 401, 521
+                A  70,  70 0 0 1 344, 455
+                A  70,  70 0 0 0 372, 460
+                A  70,  70 0 0 1 354, 370
+                A 195, 195 0 0 0 495, 442
+                A  67,  67 0 0 1 611, 380
+                A 117, 117 0 0 0 654, 363
+                A  65,  65 0 0 1 623, 401
+                A 117, 117 0 0 0 662, 390
+                A  65,  65 0 0 1 630, 425
+                Z"
+                style="fill: white;"/>
+            </svg>
+            </a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/dylan-ramsey/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

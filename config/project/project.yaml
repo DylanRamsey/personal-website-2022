@@ -1,0 +1,25 @@
+dateModified: 1652905411
+email:
+  fromEmail: dylanbradramsey@gmail.com
+  fromName: 'Dylan Ramsey'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    2e86db90-dacc-41d9-8b48-8507d5bcd4b6: 'Dylan Ramsey' # Dylan Ramsey
+    81ac7a5f-adcd-4761-a7cd-3e5ffd93c2d9: Homepage # Homepage
+    1325cb30-d549-4ac7-b904-bcb8086b9b8f: 'Main Header' # Main Header
+    a992fd09-6bb3-493f-9e5b-e480e9ca07f1: Common # Common
+    ae19a794-7ae5-4f3c-8ea7-1516867ff974: Homepage # Homepage
+    d9514a15-5a29-4c90-8bb8-647e0ac191a4: 'Dylan Ramsey' # Dylan Ramsey
+system:
+  edition: pro
+  live: true
+  name: 'Dylan Ramsey'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

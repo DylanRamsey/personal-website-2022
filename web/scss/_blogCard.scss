@@ -1,0 +1,55 @@
+.blogPost {
+  margin-bottom: 4.375rem;
+}
+
+.blogCard {
+  width: 22rem;
+  height: 26.5625rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.blogCardImage {
+  border-radius: 8px 8px 0 0;
+}
+
+.blogCardImage.breezelineBlog {
+  background-image: url("/assets/breezeline-desktop.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 18.75rem;
+  width: 100%
+}
+
+.blogCardImage.islandBlog {
+  background-image: url("/assets/islandFin-desktop.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 18.75rem;
+  width: 100%
+}
+
+.blogCardImage.bdl {
+  background-image: url("/assets/blackdogleashes-desktop.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 18.75rem;
+  width: 100%
+}
+
+.blogCardContent {
+  height: 7.75rem;
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0 1.3125rem;
+
+  h4 {
+    margin-bottom: 0.8125rem;
+  }
+}

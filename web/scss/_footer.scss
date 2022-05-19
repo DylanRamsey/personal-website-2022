@@ -1,0 +1,25 @@
+.footer {
+  margin-top: 113px;
+  margin-bottom: 34px;
+}
+
+.footerNavBarRoutes {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.footerNavBarRoutes li {
+  font-size: 1rem;
+  margin-right: 2.25rem;
+  transition: margin 0.2s ease-in-out;
+}
+
+.footerNavBarRoutes li:hover {
+  margin-top: -5px;
+}
+
+.footerNavBarRoutes li a {
+  color: white;
+  text-decoration: none;
+}

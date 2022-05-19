@@ -1,0 +1,552 @@
+/*
+  Josh W Comeau CSS reset 
+*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 5.8rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(166.44deg, #4E71CD 9.72%, rgba(132, 157, 220, 0.692708) 81.36%, rgba(255, 255, 255, 0) 139.48%);
+  color: white;
+  height: 100%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.textShadow {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  margin: auto;
+  width: 1230px;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceInbetwen {
+  justify-content: space-between;
+}
+
+.flexAlignBase {
+  display: flex;
+  align-items: baseline;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.button {
+  align-items: center;
+  min-width: 400px;
+  border-radius: 5px;
+  border: 3px solid #FFFFFF;
+  color: white;
+  display: inline-flex;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  height: 62px;
+  justify-content: center;
+  margin: 20px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.button p {
+  filter: none;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7.8125rem;
+  margin-top: 4.375rem;
+}
+
+.navBarRoutes {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navBarRoutes li {
+  font-size: 1.5rem;
+  margin-right: 2.25rem;
+  transition: margin 0.2s ease-in-out;
+}
+
+.navBarRoutes li:hover {
+  margin-top: -5px;
+}
+
+.navBarRoutes li a {
+  color: white;
+  text-decoration: none;
+}
+
+.siteSearch {
+  background: none;
+  border-radius: 25px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.375rem;
+  padding-left: 1.563rem;
+  padding-right: 1rem;
+  width: 17.25rem;
+}
+
+.siteSearch::placeholder {
+  color: white;
+}
+
+.searchAndSocial {
+  align-items: center;
+  display: flex;
+}
+
+.socialIcons {
+  align-content: center;
+  display: flex;
+}
+
+.twitter {
+  height: 1.875rem;
+  margin-left: 1.563rem;
+  width: 1.875rem;
+}
+.twitter svg {
+  height: 100%;
+}
+
+.linkedin {
+  height: 1.875rem;
+  margin-left: 1.063rem;
+  width: 1.875rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18.125rem;
+}
+
+.heroContent {
+  width: 39.0625rem;
+}
+
+.heroMainContent {
+  margin-bottom: 4.5rem;
+}
+
+.heroImage img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  border-radius: 230px;
+  height: 28.625rem;
+  width: 27.1875rem;
+}
+
+.envelopeIcon svg {
+  margin-left: 10px;
+  transition: margin 0.2s ease-in-out;
+}
+
+.downCheveronLogo {
+  margin-left: 10px;
+}
+
+.envelopeIcon svg:hover {
+  margin-top: -5px;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+.checkMeOut a {
+  text-decoration: none;
+  color: white;
+}
+
+.postHeroHeader {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.breezelineLogo {
+  background-image: url("/assets/breezeline.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 14.75rem;
+  width: 28.25rem;
+}
+
+.islandfinLogo {
+  background-image: url("/assets/island-fin.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 11.125rem;
+  width: 22.8125rem;
+}
+
+.borlaLogo {
+  background-image: url("/assets/borla.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 4.375rem;
+  width: 16.875rem;
+}
+
+.blackDogLeashesLogo {
+  background-image: url("/assets/black-dog-leashes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15rem;
+  width: 15rem;
+}
+
+.srqCustomsLogo {
+  background-image: url("/assets/srq-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 7.125rem;
+  width: 10rem;
+}
+
+.rapvLogo {
+  background-image: url("/assets/rapv-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  width: 265px;
+}
+
+.experience {
+  margin-top: 2.875rem;
+  margin-bottom: 4.125rem;
+}
+
+.experienceCard {
+  border: solid white 0.1875rem;
+  border-radius: 1.25rem;
+  height: 19.8125rem;
+  margin: auto;
+  width: 53.3125rem;
+}
+
+.employedBy {
+  max-width: 15.4375rem;
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-left: 2.1875rem;
+}
+
+.employedDescription {
+  border-left: solid 3px;
+  padding-top: 2.5rem;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 37.5rem;
+  width: 100%;
+}
+
+.blogPost {
+  margin-bottom: 4.375rem;
+}
+
+.blogCard {
+  width: 22rem;
+  height: 26.5625rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.blogCardImage {
+  border-radius: 8px 8px 0 0;
+}
+
+.blogCardImage.breezelineBlog {
+  background-image: url("/assets/breezeline-desktop.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 18.75rem;
+  width: 100%;
+}
+
+.blogCardImage.islandBlog {
+  background-image: url("/assets/islandFin-desktop.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 18.75rem;
+  width: 100%;
+}
+
+.blogCardImage.bdl {
+  background-image: url("/assets/blackdogleashes-desktop.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 18.75rem;
+  width: 100%;
+}
+
+.blogCardContent {
+  height: 7.75rem;
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0 1.3125rem;
+}
+.blogCardContent h4 {
+  margin-bottom: 0.8125rem;
+}
+
+.toolCards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.25rem;
+}
+
+.toolCard {
+  width: 200px;
+  height: 200px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolCard img {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+}
+
+.standards {
+  margin-bottom: 84px;
+}
+.standards .standard {
+  height: 500px;
+}
+.standards .standard h4 {
+  margin-bottom: 1.5rem;
+}
+.standards .standard .mobileResponsive {
+  background-image: url("/assets/mobileResponsive.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+.standards .standard .accessible {
+  background-image: url("/assets/accessible.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+.standards .standard .optimized {
+  background-image: url("/assets/optimized.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+.services {
+  margin: 85px auto;
+}
+
+.testimonial {
+  background: linear-gradient(117.27deg, #1d336a -43.24%, rgba(137, 190, 239, 0.1) 112.39%, rgba(255, 255, 255, 0) 112.41%);
+  border-radius: 1.25rem;
+  border: 0.1875rem solid white;
+  display: flex;
+  flex-flow: column;
+  height: 19.8125rem;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0 1.875rem;
+  width: 53.3125rem;
+}
+
+.testimonialCopy {
+  margin-bottom: 1.875rem;
+}
+
+.footer {
+  margin-top: 113px;
+  margin-bottom: 34px;
+}
+
+.footerNavBarRoutes {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.footerNavBarRoutes li {
+  font-size: 1rem;
+  margin-right: 2.25rem;
+  transition: margin 0.2s ease-in-out;
+}
+
+.footerNavBarRoutes li:hover {
+  margin-top: -5px;
+}
+
+.footerNavBarRoutes li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

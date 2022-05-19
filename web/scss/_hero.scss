@@ -1,0 +1,57 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18.125rem;
+}
+
+.heroContent {
+  width: 39.0625rem;
+}
+
+.heroMainContent {
+  margin-bottom: 4.5rem;
+}
+
+.heroImage img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  border-radius: 230px;
+  height:28.625rem;
+  width: 27.1875rem;
+}
+
+.envelopeIcon svg {
+  margin-left: 10px;
+  transition: margin 0.2s ease-in-out;
+}
+
+.downCheveronLogo {
+  margin-left: 10px;
+}
+
+.envelopeIcon svg:hover {
+  margin-top: -5px;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink{
+  to { opacity: .0; }
+}
+
+.checkMeOut a {
+  text-decoration: none;
+  color: white;
+}
+
+.postHeroHeader {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+

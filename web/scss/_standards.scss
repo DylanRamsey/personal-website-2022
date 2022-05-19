@@ -1,0 +1,36 @@
+.standards {
+  margin-bottom: 84px;
+
+  .standard {
+    height: 500px;
+  
+    h4 {
+      margin-bottom: 1.5rem;
+    }
+  
+    .mobileResponsive {
+      background-image: url("/assets/mobileResponsive.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 100%;
+    }
+  
+    .accessible {
+      background-image: url("/assets/accessible.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 100%;
+    }
+  
+    .optimized {
+      background-image: url("/assets/optimized.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 100%;
+    }
+  }
+}
+

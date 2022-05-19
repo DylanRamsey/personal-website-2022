@@ -1,0 +1,69 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7.8125rem;
+  margin-top: 4.375rem;
+}
+
+.navBarRoutes {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navBarRoutes li {
+  font-size: 1.5rem;
+  margin-right: 2.25rem;
+  transition: margin 0.2s ease-in-out;
+}
+
+.navBarRoutes li:hover {
+  margin-top: -5px;
+}
+
+.navBarRoutes li a {
+  color: white;
+  text-decoration: none;
+}
+
+.siteSearch {
+  background: none;
+  border-radius: 25px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.375rem;
+  padding-left: 1.563rem;
+  padding-right: 1rem;
+  width: 17.25rem;
+}
+
+.siteSearch::placeholder {
+  color: white;
+}
+
+.searchAndSocial {
+  align-items: center;
+  display: flex;
+}
+
+.socialIcons {
+  align-content: center;
+  display: flex;
+}
+
+.twitter {
+  height: 1.875rem;
+  margin-left: 1.563rem;
+  width: 1.875rem;
+
+  svg {
+    height: 100%;
+  }
+}
+
+.linkedin {
+  height: 1.875rem;
+  margin-left: 1.063rem;
+  width:1.875rem;
+}
