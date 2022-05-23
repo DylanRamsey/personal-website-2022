@@ -1,15 +1,27 @@
-dateModified: 1652905411
+dateModified: 1653277162
 email:
   fromEmail: dylanbradramsey@gmail.com
   fromName: 'Dylan Ramsey'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/images/uploads/images'
+    type: craft\fs\Local
+    url: '@web/images/uploads/images'
 meta:
   __names__:
     2e86db90-dacc-41d9-8b48-8507d5bcd4b6: 'Dylan Ramsey' # Dylan Ramsey
+    4b938d7b-1055-4d7b-aad0-c5bc40947750: Images # Images
+    5dc12c22-ee64-469d-846e-5091ddc2e3b3: 'Single Image' # Single Image
+    57e4fbeb-d9f9-4628-a9e6-35b1301f1aa2: blog # blog
     81ac7a5f-adcd-4761-a7cd-3e5ffd93c2d9: Homepage # Homepage
     1325cb30-d549-4ac7-b904-bcb8086b9b8f: 'Main Header' # Main Header
     a992fd09-6bb3-493f-9e5b-e480e9ca07f1: Common # Common
     ae19a794-7ae5-4f3c-8ea7-1516867ff974: Homepage # Homepage
+    cf1d4cda-c224-41ff-b004-dcc79d68d2de: Default # Default
     d9514a15-5a29-4c90-8bb8-647e0ac191a4: 'Dylan Ramsey' # Dylan Ramsey
 system:
   edition: pro

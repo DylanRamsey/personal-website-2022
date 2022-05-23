@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: blog
+name: blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  d9514a15-5a29-4c90-8bb8-647e0ac191a4: # Dylan Ramsey
+    enabledByDefault: true
+    hasUrls: true
+    template: blog/_entry
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: c9286e18-8c02-4708-a49b-9f7c77224b43
+type: structure
