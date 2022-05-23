@@ -37,6 +37,26 @@ fieldLayouts:
             uid: 0e3b2b99-3139-4dd3-9715-8422c2d34080
             warning: null
             width: 100
+          -
+            fieldUid: 5dc12c22-ee64-469d-846e-5091ddc2e3b3 # Single Image
+            instructions: null
+            label: 'Header Image'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b1be05a-0cda-4df2-8870-3e9e8f132590
+            warning: null
+            width: 100
+          -
+            fieldUid: e0903be7-2a36-4944-b933-2188eed07e1f # Location
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0231d21-3002-4d10-a0d2-722a0f956ca4
+            warning: null
+            width: 100
         name: Content
         uid: a09c6bb6-89d3-4662-b1f6-c9f59a0ecc7b
 handle: homepage

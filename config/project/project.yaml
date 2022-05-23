@@ -1,4 +1,4 @@
-dateModified: 1653277162
+dateModified: 1653326143
 email:
   fromEmail: dylanbradramsey@gmail.com
   fromName: 'Dylan Ramsey'
@@ -23,6 +23,7 @@ meta:
     ae19a794-7ae5-4f3c-8ea7-1516867ff974: Homepage # Homepage
     cf1d4cda-c224-41ff-b004-dcc79d68d2de: Default # Default
     d9514a15-5a29-4c90-8bb8-647e0ac191a4: 'Dylan Ramsey' # Dylan Ramsey
+    e0903be7-2a36-4944-b933-2188eed07e1f: Location # Location
 system:
   edition: pro
   live: true
