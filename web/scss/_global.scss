@@ -34,6 +34,10 @@ h5 {
   font-size: 1.25rem;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 body {
   background: $siteBackground;
   color: white;
@@ -44,8 +48,8 @@ body {
   font-style: italic;
 }
 
-.green {
-  color: green;
+.fontWeightLight {
+  font-weight: 400;
 }
 
 .textShadow {

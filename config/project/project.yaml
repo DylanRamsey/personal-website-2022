@@ -1,4 +1,4 @@
-dateModified: 1653326143
+dateModified: 1653418282
 email:
   fromEmail: dylanbradramsey@gmail.com
   fromName: 'Dylan Ramsey'
@@ -17,6 +17,7 @@ meta:
     4b938d7b-1055-4d7b-aad0-c5bc40947750: Images # Images
     5dc12c22-ee64-469d-846e-5091ddc2e3b3: 'Single Image' # Single Image
     57e4fbeb-d9f9-4628-a9e6-35b1301f1aa2: blog # blog
+    67dd4237-b6c2-4968-a0db-09c544257c2f: 'Post Content' # Post Content
     81ac7a5f-adcd-4761-a7cd-3e5ffd93c2d9: Homepage # Homepage
     1325cb30-d549-4ac7-b904-bcb8086b9b8f: 'Main Header' # Main Header
     a992fd09-6bb3-493f-9e5b-e480e9ca07f1: Common # Common
@@ -24,6 +25,11 @@ meta:
     cf1d4cda-c224-41ff-b004-dcc79d68d2de: Default # Default
     d9514a15-5a29-4c90-8bb8-647e0ac191a4: 'Dylan Ramsey' # Dylan Ramsey
     e0903be7-2a36-4944-b933-2188eed07e1f: Location # Location
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: pro
   live: true

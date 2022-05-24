@@ -93,6 +93,10 @@ h5 {
   font-size: 1.25rem;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(166.44deg, #4E71CD 9.72%, rgba(132, 157, 220, 0.692708) 81.36%, rgba(255, 255, 255, 0) 139.48%);
   color: white;
@@ -101,6 +105,10 @@ body {
 
 .italic {
   font-style: italic;
+}
+
+.fontWeightLight {
+  font-weight: 400;
 }
 
 .textShadow {
@@ -547,6 +555,15 @@ body {
 .footerNavBarRoutes li a {
   color: white;
   text-decoration: none;
+}
+
+.postContainer {
+  background: #FAFAFA;
+  border-radius: 5px;
+  padding: 60px;
+}
+.postContainer p {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

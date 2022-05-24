@@ -1,0 +1,27 @@
+columnSuffix: tlupsuaj
+contentColumnType: text
+fieldGroup: a992fd09-6bb3-493f-9e5b-e480e9ca07f1 # Common
+handle: postContent
+instructions: 'All the copy for each post'
+name: 'Post Content'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field
