@@ -566,4 +566,14 @@ body {
   color: black;
 }
 
+.blogImage {
+  border-radius: 5px;
+  margin-bottom: 58px;
+}
+
+.postEntry a {
+  color: white;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

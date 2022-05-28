@@ -1,14 +1,22 @@
 {% extends "_layouts/main" %}
 {% block main %}
 
-<h2>The problem with SCRUM</h2>
+  <h2>{{ entry.title}}</h2>
 
-<h3 class="fontWeightLight">Dylan Ramsey | April 18, 2022 </h3>
-
-<article>
-  <div class="postContainer">
-    {{ entry.postContent }}
+  {% if entry.postAuthor is defined %}
+    <h3 class="fontWeightLight">{{ entry.postAuthor}} | {{ entry.postedDate}}</h3>
+  {% endif %}
+  
+  {% if entry.singleImage.one().url() is defined %}
+  <div> 
+    <img src="{{ entry.singleImage.one().url() }}" class="blogImage">
   </div>
-</article>
+  {% endif %}
+
+  <article>
+    <div class="postContainer">
+      {{ entry.postContent }}
+    </div>
+  </article>
 
 {% endblock %}

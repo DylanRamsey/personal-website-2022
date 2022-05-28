@@ -1,0 +1,23 @@
+{% extends "_layouts/main" %}
+{% block main %}
+  {% for post in craft.entries.section('blog').all() %}
+  <div class="postEntry">
+    <p>
+      <a href="{{post.url}}">
+        <h2> {{post.title}} </h2>
+        <h3>
+            {% if post.postAuthor is defined %}
+              <h3 class="fontWeightLight">{{ post.postAuthor}} | {{ post.postedDate}}</h3>
+            {% endif %}
+        </h3>
+
+          {% if post.singleImage.one().url() is defined %}
+            <div> 
+              <img src="{{ post.singleImage.one().url() }}" class="blogImage">
+            </div>
+          {% endif %}
+      </a>
+    </p>
+  </div>
+  {% endfor %}
+{% endblock %}
