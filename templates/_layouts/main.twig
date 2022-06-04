@@ -21,11 +21,9 @@
   <div class="container">
     <nav class="navBar">
       <ul class="navBarRoutes textShadow">
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Services</a></li>
-        <li><a href="/">Portfolio</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Blog</a></li>
+        {% for navItem in navigation.navigation %}
+          <li><a href="{{ navItem.navigationUrl }}">{{ navItem.navigationLabel }}</a></li>
+        {% endfor %}
       </ul>
       <div class="searchAndSocial">
         <div>

@@ -1,4 +1,4 @@
-dateModified: 1653756938
+dateModified: 1654315841
 email:
   fromEmail: dylanbradramsey@gmail.com
   fromName: 'Dylan Ramsey'
@@ -23,6 +23,8 @@ meta:
     81ac7a5f-adcd-4761-a7cd-3e5ffd93c2d9: Homepage # Homepage
     1325cb30-d549-4ac7-b904-bcb8086b9b8f: 'Main Header' # Main Header
     06179a13-0bb0-4edf-8b2c-4c659107d4f6: 'Post List' # Post List
+    9556f1c2-777d-42c7-875e-3250a592baac: Navigation # Navigation
+    0079526e-4159-4f6d-80b8-03c0075865d9: Navigation # Navigation
     a992fd09-6bb3-493f-9e5b-e480e9ca07f1: Common # Common
     ae19a794-7ae5-4f3c-8ea7-1516867ff974: Homepage # Homepage
     cf1d4cda-c224-41ff-b004-dcc79d68d2de: Default # Default

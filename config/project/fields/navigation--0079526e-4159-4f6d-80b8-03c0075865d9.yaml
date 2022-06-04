@@ -1,0 +1,58 @@
+columnSuffix: itpqipxj
+contentColumnType: text
+fieldGroup: a992fd09-6bb3-493f-9e5b-e480e9ca07f1 # Common
+handle: navigation
+instructions: null
+name: Navigation
+searchable: false
+settings:
+  addRowLabel: 'Add a row'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Navigation Label'
+            -
+              - handle
+              - navigationLabel
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Navigation URL'
+            -
+              - handle
+              - navigationUrl
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+  maxRows: 5
+  minRows: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table
