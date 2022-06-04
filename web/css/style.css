@@ -576,4 +576,22 @@ body {
   text-decoration: none;
 }
 
+.serviceCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.serviceCards .serviceCard {
+  color: black;
+  border-radius: 20px;
+  background: white;
+  width: 330px;
+  height: 300px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 62px;
+}
+
 /*# sourceMappingURL=style.css.map */
