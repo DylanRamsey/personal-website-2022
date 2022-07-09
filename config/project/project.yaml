@@ -1,4 +1,4 @@
-dateModified: 1657392345
+dateModified: 1657392564
 email:
   fromEmail: dylanbradramsey@gmail.com
   fromName: 'Dylan Ramsey'
@@ -20,7 +20,7 @@ meta:
     8f9647af-f7e4-4f55-8788-f7b7cbc8fbda: Date # Date
     9b7ac66d-c8ff-477b-9546-2d00f7b17fb7: 'Services Page' # Services Page
     38dbc41b-503c-45a2-8a47-202f185327c8: Icon # Icon
-    57e4fbeb-d9f9-4628-a9e6-35b1301f1aa2: blog # blog
+    57e4fbeb-d9f9-4628-a9e6-35b1301f1aa2: 'Single Blog Post' # Single Blog Post
     67dd4237-b6c2-4968-a0db-09c544257c2f: 'Post Content' # Post Content
     81ac7a5f-adcd-4761-a7cd-3e5ffd93c2d9: Homepage # Homepage
     591b26a5-dab8-44d9-8fd0-04cf2f6b642e: 'Service Card' # Service Card

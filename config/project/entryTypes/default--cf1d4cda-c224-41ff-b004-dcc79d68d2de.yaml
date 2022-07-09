@@ -72,7 +72,7 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: 57e4fbeb-d9f9-4628-a9e6-35b1301f1aa2 # blog
+section: 57e4fbeb-d9f9-4628-a9e6-35b1301f1aa2 # Single Blog Post
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

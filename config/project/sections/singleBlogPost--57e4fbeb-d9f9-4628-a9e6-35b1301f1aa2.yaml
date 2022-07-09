@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: blog
-name: blog
+handle: singleBlogPost
+name: 'Single Blog Post'
 previewTargets:
   -
     __assoc__:
