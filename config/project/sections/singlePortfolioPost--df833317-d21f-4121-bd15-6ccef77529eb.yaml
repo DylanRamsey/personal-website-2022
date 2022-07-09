@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: singlePortfolioPost
+name: 'Single Portfolio Post'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  d9514a15-5a29-4c90-8bb8-647e0ac191a4: # Dylan Ramsey
+    enabledByDefault: true
+    hasUrls: true
+    template: single-portfolio-post/_entry.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 2d0b5ff8-fe0d-4f1a-8a78-1f063c63bb54
+type: structure

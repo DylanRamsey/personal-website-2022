@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: portfolioPostList
+name: 'Portfolio Post List'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  d9514a15-5a29-4c90-8bb8-647e0ac191a4: # Dylan Ramsey
+    enabledByDefault: true
+    hasUrls: true
+    template: portfolio-post-list/_entry
+    uriFormat: portfolio
+type: single

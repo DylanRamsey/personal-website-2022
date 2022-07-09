@@ -1,0 +1,39 @@
+fieldLayouts:
+  fae85197-7022-46c1-8662-1884fbba37b5:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aa633c2f-342c-4103-8add-1931cf3abf22
+            warning: null
+            width: 100
+        name: Content
+        uid: a35fcd3a-8fdb-4537-9d2b-51bee3a14f7b
+handle: portfolioPostList
+hasTitleField: false
+name: 'Portfolio Post List'
+section: a77ee0fa-2c38-42e6-ade5-e78e19c914d6 # Portfolio Post List
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

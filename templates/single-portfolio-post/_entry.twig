@@ -1,0 +1,20 @@
+{% extends "_layouts/main" %}
+{% block main %}
+  <h2>{{ entry.title}}</h2>
+
+  {% if entry.postAuthor is defined %}
+    <h3 class="fontWeightLight">{{ entry.postAuthor}} | {{ entry.postedDate}}</h3>
+  {% endif %}
+  
+  {% if entry.singleImage.one().url() is defined %}
+  <div> 
+    <img src="{{ entry.singleImage.one().url() }}" class="blogImage">
+  </div>
+  {% endif %}
+
+  <article>
+    <div class="postContainer">
+      {{ entry.postContent }}
+    </div>
+  </article>
+{% endblock %}

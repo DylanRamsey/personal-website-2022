@@ -1,4 +1,4 @@
-dateModified: 1657392564
+dateModified: 1657393075
 email:
   fromEmail: dylanbradramsey@gmail.com
   fromName: 'Dylan Ramsey'
@@ -30,6 +30,8 @@ meta:
     06179a13-0bb0-4edf-8b2c-4c659107d4f6: 'Blog Post List' # Blog Post List
     9556f1c2-777d-42c7-875e-3250a592baac: Navigation # Navigation
     0079526e-4159-4f6d-80b8-03c0075865d9: Navigation # Navigation
+    a77ee0fa-2c38-42e6-ade5-e78e19c914d6: 'Portfolio Post List' # Portfolio Post List
+    a574e5ad-1c70-43fe-8ca6-952d386c928a: 'Portfolio Post List' # Portfolio Post List
     a892eb79-73bf-4774-af27-7b50a400543f: 'About Page' # About Page
     a992fd09-6bb3-493f-9e5b-e480e9ca07f1: Common # Common
     ae19a794-7ae5-4f3c-8ea7-1516867ff974: Homepage # Homepage
@@ -38,9 +40,11 @@ meta:
     cf1d4cda-c224-41ff-b004-dcc79d68d2de: Default # Default
     d3fd6e28-aaa3-4ab0-a5e9-6dd1ddffc5ce: 'Service Header' # Service Header
     d9514a15-5a29-4c90-8bb8-647e0ac191a4: 'Dylan Ramsey' # Dylan Ramsey
+    df833317-d21f-4121-bd15-6ccef77529eb: 'Single Portfolio Post' # Singe Portfolio Post
     e0903be7-2a36-4944-b933-2188eed07e1f: Location # Location
     ef2f3bae-c097-4b65-91d4-89e7dd90b462: 'Blog Post List' # Blog Post List
     ef669da3-6247-4d55-8005-15e8fe01f0de: 'Services Page' # Services Page
+    fe5f7cce-9b68-451f-b132-e2dfb6de5e64: Default # Default
 plugins:
   redactor:
     edition: standard
