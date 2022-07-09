@@ -1,19 +1,17 @@
 {% extends "_layouts/main" %}
 {% block main %}
+  <h1>My Work</h1>
   {% for post in craft.entries.section('singlePortfolioPost').all() %}
-  <div class="postEntry">
+  <div class="postEntry portfolioListWidth
+    {% if post.alignContent == 'rightAlign' %} alignContentRight {% endif %}
+  ">
     <p>
-      <a href="{{post.url}}">
-        <h2> {{post.title}} </h2>
-        <h3>
-            {% if post.postAuthor is defined %}
-              <h3 class="fontWeightLight">{{ post.postAuthor}} | {{ post.postedDate}}</h3>
-            {% endif %}
-        </h3>
-
+      <a href="{{ post.url }}">
+        <h2 class="projectTitle"> {{ post.title }} </h2>
+        <h3 class=""> {{ post.postContent }} </h3>
           {% if post.singleImage.one().url() is defined %}
             <div> 
-              <img src="{{ post.singleImage.one().url() }}" class="blogImage">
+              <img src="{{ post.singleImage.one().url() }}" width="887" class="blogImage">
             </div>
           {% endif %}
       </a>

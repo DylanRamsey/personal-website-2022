@@ -1,0 +1,45 @@
+columnSuffix: suwqxmtq
+contentColumnType: string
+fieldGroup: a992fd09-6bb3-493f-9e5b-e480e9ca07f1 # Common
+handle: alignContent
+instructions: null
+name: 'Align Content'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Left Align '
+        -
+          - value
+          - leftAlign
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Center Align '
+        -
+          - value
+          - centerAlign
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Right Align '
+        -
+          - value
+          - rightAlign
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

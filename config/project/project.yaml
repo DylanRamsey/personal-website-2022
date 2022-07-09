@@ -1,4 +1,4 @@
-dateModified: 1657393075
+dateModified: 1657401878
 email:
   fromEmail: dylanbradramsey@gmail.com
   fromName: 'Dylan Ramsey'
@@ -39,8 +39,9 @@ meta:
     c6993108-6aff-450f-b871-6779180db4f1: 'Service Card' # Service Card
     cf1d4cda-c224-41ff-b004-dcc79d68d2de: Default # Default
     d3fd6e28-aaa3-4ab0-a5e9-6dd1ddffc5ce: 'Service Header' # Service Header
+    d53edcf4-a8b6-4b34-a0bd-4e29bfaaaa6e: 'Align Content' # Align Content
     d9514a15-5a29-4c90-8bb8-647e0ac191a4: 'Dylan Ramsey' # Dylan Ramsey
-    df833317-d21f-4121-bd15-6ccef77529eb: 'Single Portfolio Post' # Singe Portfolio Post
+    df833317-d21f-4121-bd15-6ccef77529eb: 'Single Portfolio Post' # Single Portfolio Post
     e0903be7-2a36-4944-b933-2188eed07e1f: Location # Location
     ef2f3bae-c097-4b65-91d4-89e7dd90b462: 'Blog Post List' # Blog Post List
     ef669da3-6247-4d55-8005-15e8fe01f0de: 'Services Page' # Services Page

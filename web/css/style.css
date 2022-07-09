@@ -65,6 +65,12 @@ p, h1, h2, h3, h4, h5, h6 {
   scroll-behavior: smooth;
 }
 
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(166.44deg, #4E71CD 9.72%, rgba(132, 157, 220, 0.692708) 81.36%, rgba(255, 255, 255, 0) 139.48%);
+  color: white;
+  height: 100%;
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
@@ -101,14 +107,12 @@ p {
   margin-bottom: 20px;
 }
 
-body {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(166.44deg, #4E71CD 9.72%, rgba(132, 157, 220, 0.692708) 81.36%, rgba(255, 255, 255, 0) 139.48%);
-  color: white;
-  height: 100%;
-}
-
 .italic {
   font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .fontWeightLight {
@@ -616,6 +620,19 @@ body {
   justify-content: space-evenly;
   margin-bottom: 62px;
   padding-bottom: 20px;
+}
+
+.portfolioListWidth {
+  max-width: 100%;
+  width: 887px;
+}
+
+.projectTitle {
+  border-bottom: solid white 4px;
+}
+
+.alignContentRight {
+  margin: 0 0 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

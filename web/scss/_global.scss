@@ -6,6 +6,12 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background: $siteBackground;
+  color: white;
+  height:100%;
+}
+
 h1,h2,h3,h4,h5 {
   font-weight: 500;
 }
@@ -42,16 +48,12 @@ p {
   margin-bottom: 20px;
 }
 
-
-
-body {
-  background: $siteBackground;
-  color: white;
-  height:100%;
-}
-
 .italic {
   font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .fontWeightLight {

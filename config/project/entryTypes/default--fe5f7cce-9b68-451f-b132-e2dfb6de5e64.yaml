@@ -28,26 +28,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6a7656ff-a820-4b7b-ab00-2204f6a159bc # Author
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7221c711-b46e-4330-91f9-a45b7e188fba
-            warning: null
-            width: 100
-          -
-            fieldUid: 8f9647af-f7e4-4f55-8788-f7b7cbc8fbda # Date
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a1bb85fd-8675-4aef-ac1f-778d1cd4270c
-            warning: null
-            width: 100
-          -
             fieldUid: 5dc12c22-ee64-469d-846e-5091ddc2e3b3 # Single Image
             instructions: null
             label: null
@@ -67,12 +47,22 @@ fieldLayouts:
             uid: 00804cb2-ddb7-445d-9910-58f67ffc03ec
             warning: null
             width: 100
+          -
+            fieldUid: d53edcf4-a8b6-4b34-a0bd-4e29bfaaaa6e # Align Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c81fad06-ab31-40a8-b00e-ac11dc1f330a
+            warning: null
+            width: 100
         name: Content
         uid: 517f028a-0bda-4f95-b0b8-057681ecd8e6
 handle: default
 hasTitleField: true
 name: Default
-section: df833317-d21f-4121-bd15-6ccef77529eb # Singe Portfolio Post
+section: df833317-d21f-4121-bd15-6ccef77529eb # Single Portfolio Post
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
