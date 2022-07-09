@@ -5,14 +5,16 @@
 
   .serviceCard {
     color: black;
-    border-radius: 20px;
+    border: 2px solid #000000;
+    border-radius: 25px;
     background: white;
     width: 330px;
     height: 300px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 62px;
+    padding-bottom: 20px;
   }
 }

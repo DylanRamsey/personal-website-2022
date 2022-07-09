@@ -1,0 +1,16 @@
+{% extends "_layouts/main" %}
+{% block main %}
+  <div class="flex spaceInbetwen">
+    <div>
+      <h2 class="textShadow">
+        {% if entry.mainHeader is defined %}
+          {{ entry.mainHeader }}
+        {% endif %}
+      </h2>
+      <h3>{{ entry.postContent }}</h3>
+    </div>
+    <div>
+      <img src="{{ entry.singleImage.one().url }}" width="580" class="radiusTwentyFive" />
+    </div>
+  </div>
+{% endblock %}
