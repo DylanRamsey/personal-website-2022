@@ -19,7 +19,7 @@ siteSettings:
   d9514a15-5a29-4c90-8bb8-647e0ac191a4: # Dylan Ramsey
     enabledByDefault: true
     hasUrls: true
-    template: blog/_entry
+    template: single-blog-post/_entry
     uriFormat: '{parent.uri}/{slug}'
 structure:
   maxLevels: null

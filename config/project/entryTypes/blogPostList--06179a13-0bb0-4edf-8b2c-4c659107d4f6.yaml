@@ -29,10 +29,10 @@ fieldLayouts:
             width: 100
         name: Content
         uid: c1622a3c-959c-4272-8bfe-e196b71229b6
-handle: postList
+handle: blogPostList
 hasTitleField: false
-name: 'Post List'
-section: ef2f3bae-c097-4b65-91d4-89e7dd90b462 # Post List
+name: 'Blog Post List'
+section: ef2f3bae-c097-4b65-91d4-89e7dd90b462 # Blog Post List
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

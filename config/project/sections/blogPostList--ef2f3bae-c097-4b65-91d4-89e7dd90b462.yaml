@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: postList
-name: 'Post List'
+handle: blogPostList
+name: 'Blog Post List'
 previewTargets:
   -
     __assoc__:
@@ -19,6 +19,6 @@ siteSettings:
   d9514a15-5a29-4c90-8bb8-647e0ac191a4: # Dylan Ramsey
     enabledByDefault: true
     hasUrls: true
-    template: post-list/_entry
-    uriFormat: blog-post
+    template: blog-list/_entry
+    uriFormat: blog
 type: single
