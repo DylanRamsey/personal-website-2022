@@ -64,13 +64,10 @@ p {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.noMargin {
-  margin: 0;
-}
-
 .container {
   margin: auto;
   width: $container;
+  max-width: 100%;
 }
 
 .centerText {

@@ -123,13 +123,10 @@ p {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.noMargin {
-  margin: 0;
-}
-
 .container {
   margin: auto;
   width: 1230px;
+  max-width: 100%;
 }
 
 .centerText {
@@ -199,12 +196,14 @@ p {
   justify-content: space-between;
   margin-bottom: 7.8125rem;
   margin-top: 4.375rem;
+  max-width: 100%;
 }
 
 .navBarRoutes {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  max-width: 100%;
 }
 
 .navBarRoutes li {
@@ -263,15 +262,18 @@ p {
   width: 1.875rem;
 }
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 18.125rem;
+@media (min-width: 1440px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18.125rem;
+  }
 }
 
 .heroContent {
   width: 39.0625rem;
+  max-width: 100%;
 }
 
 .heroMainContent {
@@ -410,6 +412,7 @@ p {
   height: 19.8125rem;
   margin: auto;
   width: 53.3125rem;
+  max-width: 100%;
 }
 
 .employedBy {
@@ -558,8 +561,16 @@ p {
 }
 
 .footer {
+  display: flex;
+  flex-flow: column;
   margin-top: 113px;
   margin-bottom: 34px;
+  max-width: 100%;
+}
+@media (min-width: 1024px) {
+  .footer {
+    flex-flow: row;
+  }
 }
 
 .footerNavBarRoutes {
@@ -633,6 +644,18 @@ p {
 
 .alignContentRight {
   margin: 0 0 0 auto;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

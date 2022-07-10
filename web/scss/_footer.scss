@@ -1,6 +1,12 @@
 .footer {
+  @media (min-width: 1024px) {
+    flex-flow: row;
+  }
+  display: flex;
+  flex-flow: column;
   margin-top: 113px;
   margin-bottom: 34px;
+  max-width: 100%;
 }
 
 .footerNavBarRoutes {

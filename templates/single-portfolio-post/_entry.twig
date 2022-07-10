@@ -1,11 +1,6 @@
 {% extends "_layouts/main" %}
 {% block main %}
-  <h2>{{ entry.title}}</h2>
-
-  {% if entry.postAuthor is defined %}
-    <h3 class="fontWeightLight">{{ entry.postAuthor}} | {{ entry.postedDate}}</h3>
-  {% endif %}
-  
+  <h1 class="textShadow">{{ entry.title}}</h1>
   {% if entry.singleImage.one().url() is defined %}
     <div> 
       <img src="{{ entry.singleImage.one().url() }}" class="blogImage">

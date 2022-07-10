@@ -3,12 +3,14 @@
   justify-content: space-between;
   margin-bottom: 7.8125rem;
   margin-top: 4.375rem;
+  max-width: 100%;
 }
 
 .navBarRoutes {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  max-width: 100%;
 }
 
 .navBarRoutes li {

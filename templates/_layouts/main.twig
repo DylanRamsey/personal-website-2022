@@ -71,13 +71,13 @@
 <footer class="footer container flex alignItemsCenter spaceInbetwen">
       <div class="footerLeft">Copyright 2022 Dylan Ramsey</div>
       <div class="footerRight flex alignItemsCenter">
-        <ul class="footerNavBarRoutes">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Services</a></li>
-          <li><a href="/">Portfolio</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Blog</a></li>
-        </ul>
+      <ul class="footerNavBarRoutes">
+        {% for navItem in navigation.navigation %}
+        <li><a href="{{ navItem.navigationUrl }}">{{ navItem.navigationLabel }}</a></li>
+        {% endfor %}   
+      </ul>
+          
+        
         <div class="socialIcons">
           <div class="twitter">
             <a href="https://twitter.com/DylanRamsey" target="_blank">

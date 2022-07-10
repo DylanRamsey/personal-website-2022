@@ -1,12 +1,15 @@
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 18.125rem;
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18.125rem;
+  }
 }
 
 .heroContent {
   width: 39.0625rem;
+  max-width: 100%;
 }
 
 .heroMainContent {
