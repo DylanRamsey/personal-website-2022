@@ -1,60 +1,84 @@
 .hero {
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     display: flex;
+    flex-flow: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 18.125rem;
+    height: unset;
   }
-}
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
 
-.heroContent {
-  width: 39.0625rem;
-  max-width: 100%;
-}
+  .heroContent {
+    width: 39.0625rem;
+    max-width: 100%;
+  
+    .heroMainContent {
+      margin-bottom: 4.5rem;
+    }
 
-.heroMainContent {
-  margin-bottom: 4.5rem;
-}
+    .blink {
+      animation: blink 0.5s infinite;
+    }
+    
+    @keyframes blink{
+      to { opacity: .0; }
+    }
 
-.heroImage img {
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  border-radius: 230px;
-  height:28.625rem;
-  width: 27.1875rem;
-}
+    .heroCta {
+      display: flex;
+      align-items: center;
 
-.envelopeIcon svg {
-  margin-left: 10px;
-  transition: margin 0.2s ease-in-out;
-}
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    
+    .downCheveronLogo {
+      margin-left: 10px;
+    }
 
-.downCheveronLogo {
-  margin-left: 10px;
-}
+    .envelopeIcon svg {
+      margin-left: 10px;
+      transition: margin 0.2s ease-in-out;
+      :hover {
+        margin-top: -5px;
+      }
+    }
+    
+    .downCheveronLogo {
+      margin-left: 10px;
+    }
+    
+    .envelopeIcon svg:hover {
+      margin-top: -5px;
+    }
+  }
 
-.envelopeIcon svg:hover {
-  margin-top: -5px;
-}
-
-.blink {
-  animation: blink 0.5s infinite;
-}
-
-@keyframes blink{
-  to { opacity: .0; }
-}
-
-.checkMeOut a {
-  text-decoration: none;
-  color: white;
+  .heroImage img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border-radius: 230px;
+    height: 16.625rem;
+    width: 17.1875rem;
+    margin: auto;
+  
+    @media (min-width: 1024px) {
+      height:28.625rem;
+      width: 27.1875rem;
+      margin: unset;
+    }
+  }
 }
 
 .postHeroHeader {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-

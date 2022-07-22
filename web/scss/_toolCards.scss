@@ -1,18 +1,27 @@
 .toolCards {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 4.25rem;
+  flex-wrap: wrap;
+  @media (min-width: 1024px) {
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 4.25rem;
+  }
 }
 
 .toolCard {
-  width: 200px;
-  height: 200px;  
-  background: #FFFFFF;
+
+  width: 80px;
+  height: 80px;
+  background: white;
   border: 2px solid #000000;
   border-radius: 25px;
   display: flex;
-  justify-content: center;
+  flex-flow: column;
   align-items: center;
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 200px; 
+  }
 
   img {
     width: 170px;

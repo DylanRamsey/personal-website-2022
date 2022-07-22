@@ -4,27 +4,34 @@
 }
 
 .experienceCard {
+  @media (min-width: $widescreen) {
+    width: 53.3125rem;
+    height: 19.8125rem;
+  }
   background: linear-gradient(117.27deg, #15153b -43.24%, rgba(137, 190, 239, 0.1) 112.39%, rgba(255, 255, 255, 0) 112.41%);
   border: solid white 0.1875rem;
   border-radius: 1.25rem;
-  height: 19.8125rem;
+
   margin: auto;
-  width: 53.3125rem;
+  width: 20rem;
   max-width: 100%;
+
+  .employedBy {
+    max-width: 15.4375rem;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-left: 2.1875rem;
+  }
+  
+  .employedDescription {
+    @media (min-width: $widescreen) {
+      padding-top: 2.5rem;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    border-left: solid 3px;
+    max-width: 37.5rem;
+    width: 100%;
+  }
 }
 
-.employedBy {
-  max-width: 15.4375rem;
-  width: 100%;
-  padding-top: 2.5rem;
-  padding-left: 2.1875rem;
-}
-
-.employedDescription {
-  border-left: solid 3px;
-  padding-top: 2.5rem;
-  padding-left: 50px;
-  padding-right: 50px;
-  max-width: 37.5rem;
-  width: 100%;
-}

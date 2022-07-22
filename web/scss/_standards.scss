@@ -1,5 +1,12 @@
 .standards {
   margin-bottom: 84px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-flow: row;
+  }
 
   .standard {
     height: 500px;

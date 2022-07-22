@@ -1,31 +1,33 @@
 .footer {
-  @media (min-width: 1024px) {
-    flex-flow: row;
-  }
   display: flex;
   flex-flow: column;
   margin-top: 113px;
   margin-bottom: 34px;
   max-width: 100%;
-}
+  @media (min-width: 1024px) {
+    flex-flow: row;
+  }
+  .footerNavBarRoutes {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    list-style: none;
+    @media (min-width: 1024px) {
+      flex-flow: row;
+    }
+    li {
+      font-size: 1rem;
+      margin-right: 2.25rem;
+      transition: margin 0.2s ease-in-out;
+  
+      :hover {
+        margin-top: -5px;
+      }
 
-.footerNavBarRoutes {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-
-.footerNavBarRoutes li {
-  font-size: 1rem;
-  margin-right: 2.25rem;
-  transition: margin 0.2s ease-in-out;
-}
-
-.footerNavBarRoutes li:hover {
-  margin-top: -5px;
-}
-
-.footerNavBarRoutes li a {
-  color: white;
-  text-decoration: none;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
 }

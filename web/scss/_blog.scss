@@ -1,7 +1,10 @@
 .postContainer {
+  @media (min-width: $desktop) {
+    padding: 60px;
+  }
   background: #FAFAFA;
   border-radius: 5px;
-  padding: 60px;
+  padding: 25px;
 
   p {
     color: black;
@@ -9,8 +12,11 @@
 }
 
 .blogImage {
+  @media (min-width: $desktop) {
+    margin-bottom: 58px;
+  }
   border-radius: 5px;
-  margin-bottom: 58px;
+  margin-bottom: 20px;
 }
 
 .postEntry {

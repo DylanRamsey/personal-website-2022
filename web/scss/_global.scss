@@ -17,31 +17,49 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-  font-size: 5.8rem;
+  @media (min-width: $desktop) {
+    font-size: 5.8rem;
+  }
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 4rem;
+  @media (min-width: $desktop) {
+    font-size: 4rem;
+  }
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 2.25rem;
+  @media (min-width: $desktop) {
+    font-size: 2.25rem;
+  }
+  font-size: 1.4rem;
   margin-bottom: 1.5rem;
 }
 
 h4 {
-  font-size: 1.75rem;
+  @media (min-width: $desktop) {
+    font-size: 1.75rem;
+  }
+  font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .text-h4 {
+  @media (min-width: $desktop) {
+    font-size: 1.75rem;
+  }
   font-size: 1.75rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+  @media (min-width: $desktop) {
+    font-size: 1.25rem;
+  }
+  font-size: 0.9rem;
 }
 
 p {
@@ -65,8 +83,11 @@ p {
 }
 
 .container {
+  @media (min-width: 1024px) {
+    width: $deskTopContainer;
+  }
   margin: auto;
-  width: $container;
+  width: $phoneContainer;
   max-width: 100%;
 }
 
@@ -102,7 +123,7 @@ p {
 .button {
   align-items: center;
   background: linear-gradient(117.27deg, #15153b -43.24%, rgba(137, 190, 239, 0.1) 112.39%, rgba(255, 255, 255, 0) 112.41%);
-  min-width: 400px;
+  max-width: 100%;
   border-radius: 5px;
   border: 3px solid #FFFFFF;
   color: white;
