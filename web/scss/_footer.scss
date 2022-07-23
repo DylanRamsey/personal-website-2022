@@ -1,22 +1,52 @@
 .footer {
-  display: flex;
-  flex-flow: column;
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
+  display: grid;
+  grid-template-columns: 1fr;
   margin-top: 113px;
   margin-bottom: 34px;
   max-width: 100%;
-  @media (min-width: 1024px) {
-    flex-flow: row;
+
+  .footerLeft {
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
+
+  .footerRight {
+    @media (min-width: $desktop) {
+      grid-template-columns: 1fr 1fr;
+    }
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .twitter {
+      @media (min-width: $desktop) {
+        margin-left: 1.563rem;
+      }
+      margin-left: 0;
+    }
+  }
+
   .footerNavBarRoutes {
+    @media (min-width: $desktop) {
+      flex-flow: row;
+      margin-bottom: 0;
+    }
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     list-style: none;
-    @media (min-width: 1024px) {
-      flex-flow: row;
-    }
+    margin-bottom: 10px;
     li {
-      font-size: 1rem;
+      @media (min-width: $desktop) {
+        font-size: 1rem;
+      }
+      font-size: 1.5rem;
       margin-right: 2.25rem;
       transition: margin 0.2s ease-in-out;
   

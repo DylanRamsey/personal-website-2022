@@ -83,7 +83,7 @@ p {
 }
 
 .container {
-  @media (min-width: 1024px) {
+  @media (min-width: $desktop) {
     width: $deskTopContainer;
   }
   margin: auto;

@@ -332,6 +332,7 @@ p {
 .hero .heroContent .heroCta {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 .hero .heroContent .heroCta a {
   text-decoration: none;
@@ -375,29 +376,6 @@ p {
 .postHeroHeader {
   margin-top: 60px;
   margin-bottom: 60px;
-}
-
-.swiper {
-  height: 100%;
-  width: 100%;
-}
-
-.swiper-slide {
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  align-items: center;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  font-size: 18px;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
 }
 
 .breezelineLogo {
@@ -548,26 +526,26 @@ p {
 }
 
 .toolCards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 @media (min-width: 1024px) {
   .toolCards {
-    flex-flow: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 4.25rem;
   }
 }
 
 .toolCard {
-  width: 80px;
-  height: 80px;
+  width: 150px;
   background: white;
   border: 2px solid #000000;
   border-radius: 25px;
   display: flex;
-  flex-flow: column;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 10px;
 }
 @media (min-width: 768px) {
   .toolCard {
@@ -577,48 +555,39 @@ p {
 }
 .toolCard img {
   width: 170px;
-  height: 170px;
+  border-radius: 25px;
   object-fit: contain;
 }
 
 .standards {
   margin-bottom: 84px;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 @media (min-width: 1024px) {
   .standards {
-    display: flex;
-    flex-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .standards .standard {
   height: 500px;
+  text-align: center;
 }
 .standards .standard h4 {
   margin-bottom: 1.5rem;
 }
-.standards .standard .mobileResponsive {
-  background-image: url("/assets/mobileResponsive.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
+.standards .standard img {
+  margin: auto;
 }
-.standards .standard .accessible {
-  background-image: url("/assets/accessible.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
+.standards .standard .mobileResponsive img {
+  width: 247.33px;
 }
-.standards .standard .optimized {
-  background-image: url("/assets/optimized.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
+.standards .standard .accessible img {
+  width: 379px;
+}
+.standards .standard .optimized img {
+  width: 347px;
 }
 
 .services {
@@ -643,15 +612,42 @@ p {
 }
 
 .footer {
-  display: flex;
-  flex-flow: column;
+  display: grid;
+  grid-template-columns: 1fr;
   margin-top: 113px;
   margin-bottom: 34px;
   max-width: 100%;
 }
 @media (min-width: 1024px) {
   .footer {
-    flex-flow: row;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.footer .footerLeft {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .footer .footerLeft {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+}
+.footer .footerRight {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .footer .footerRight {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.footer .footerRight .twitter {
+  margin-left: 0;
+}
+@media (min-width: 1024px) {
+  .footer .footerRight .twitter {
+    margin-left: 1.563rem;
   }
 }
 .footer .footerNavBarRoutes {
@@ -659,16 +655,23 @@ p {
   flex-flow: column;
   justify-content: space-between;
   list-style: none;
+  margin-bottom: 10px;
 }
 @media (min-width: 1024px) {
   .footer .footerNavBarRoutes {
     flex-flow: row;
+    margin-bottom: 0;
   }
 }
 .footer .footerNavBarRoutes li {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-right: 2.25rem;
   transition: margin 0.2s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .footer .footerNavBarRoutes li {
+    font-size: 1rem;
+  }
 }
 .footer .footerNavBarRoutes li :hover {
   margin-top: -5px;

@@ -29,9 +29,12 @@
     }
 
     .heroCta {
+      @media (min-width: $desktop) {
+
+      }
       display: flex;
       align-items: center;
-
+      margin-bottom: 20px;
       a {
         text-decoration: none;
         color: white;

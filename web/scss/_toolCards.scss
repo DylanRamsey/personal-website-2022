@@ -1,31 +1,29 @@
 .toolCards {
-  display: flex;
-  flex-wrap: wrap;
   @media (min-width: 1024px) {
-    flex-flow: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 4.25rem;
   }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;  
 }
 
 .toolCard {
-
-  width: 80px;
-  height: 80px;
-  background: white;
-  border: 2px solid #000000;
-  border-radius: 25px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
   @media (min-width: 768px) {
     width: 200px;
     height: 200px; 
   }
-
+  width: 150px;
+  background: white;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 10px;
   img {
     width: 170px;
-    height: 170px;
+    border-radius: 25px;
     object-fit: contain;
   }
 }
