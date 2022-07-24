@@ -4,7 +4,7 @@
   margin-bottom: 7.8125rem;
   margin-top: 4.375rem;
   max-width: 100%;
-  @media (min-width: 1024px) {
+  @media (min-width: $desktop) {
     display: flex;
   }
 
@@ -29,46 +29,47 @@
       text-decoration: none;
     }
   }
-}
 
-.siteSearch {
-  background: none;
-  border-radius: 25px;
-  border: 2px solid white;
-  box-sizing: border-box;
-  color: white;
-  font-size: 1.375rem;
-  padding-left: 1.563rem;
-  padding-right: 1rem;
-  width: 17.25rem;
-}
+  .searchAndSocial {
+    align-items: center;
+    display: flex;
+  }
 
-.siteSearch::placeholder {
-  color: white;
-}
+  .siteSearch {
+    background: none;
+    border-radius: 25px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1.375rem;
+    padding-left: 1.563rem;
+    padding-right: 1rem;
+    width: 17.25rem;
 
-.searchAndSocial {
-  align-items: center;
-  display: flex;
-}
-
-.socialIcons {
-  align-content: center;
-  display: flex;
-}
-
-.twitter {
-  height: 1.875rem;
-  margin-left: 1.563rem;
-  width: 1.875rem;
-
-  svg {
-    height: 100%;
+    ::placeholder {
+      color: white;
+    }
   }
 }
 
-.linkedin {
-  height: 1.875rem;
-  margin-left: 1.063rem;
-  width:1.875rem;
+/* These are shared with the footer*/
+.socialIcons {
+  align-content: center;
+  display: flex;
+
+  .twitter {
+    height: 1.875rem;
+    margin-left: 1.563rem;
+    width: 1.875rem;
+  
+    svg {
+      height: 100%;
+    }
+  }
+  
+  .linkedin {
+    height: 1.875rem;
+    margin-left: 1.063rem;
+    width:1.875rem;
+  }
 }
