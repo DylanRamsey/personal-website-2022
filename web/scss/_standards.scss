@@ -1,40 +1,29 @@
 .standards {
-  margin-bottom: 84px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
 
-  @media (min-width: 1024px) {
+  @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 84px;
   }
   .standard {
-    height: 500px;
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+    }
     text-align: center;
-  
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 50px;
+
     h4 {
+      font-size: 1.2rem;
       margin-bottom: 1.5rem;
     }
 
     img {
       margin: auto;
-    }
-  
-    .mobileResponsive {
-      img {
-        width: 247.33px;
-      }
-    }
-  
-    .accessible {
-      img {
-        width: 379px;
-      }
-    }
-  
-    .optimized {
-      img {
-        width: 347px;
-      }
+      width: 247.33px;
     }
   }
 }

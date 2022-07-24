@@ -43,52 +43,7 @@ window.addEventListener('load', function () {
   loopDeleting();
   };
 
-  typingEffect();
-
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-
-  var swiper = new Swiper(".blogSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    speed: 1000,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-
-  var swiper = new Swiper(".testimonialSwiper", {
-    slidesPerView: 1.9,
-    spaceBetween: 90,
-    loop: true,
-    centeredSlides: true,
-    speed: 1000,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
+  typingEffect();  
 }, 
 
 false);

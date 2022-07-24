@@ -560,7 +560,6 @@ p {
 }
 
 .standards {
-  margin-bottom: 84px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -568,26 +567,27 @@ p {
 @media (min-width: 1024px) {
   .standards {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 84px;
   }
 }
 .standards .standard {
-  height: 500px;
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 50px;
+}
+@media (min-width: 1024px) {
+  .standards .standard {
+    margin-bottom: 0;
+  }
 }
 .standards .standard h4 {
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 .standards .standard img {
   margin: auto;
-}
-.standards .standard .mobileResponsive img {
   width: 247.33px;
-}
-.standards .standard .accessible img {
-  width: 379px;
-}
-.standards .standard .optimized img {
-  width: 347px;
 }
 
 .services {
