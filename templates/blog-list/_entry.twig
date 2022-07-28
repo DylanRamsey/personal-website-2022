@@ -1,7 +1,7 @@
 {% extends "_layouts/main" %}
 {% block main %}
   {% for post in craft.entries.section('singleBlogPost').all() %}
-  <div class="postEntry">
+  <div class="pageHeader postEntry">
     <p>
       <a href="{{post.url}}">
         <h2 class="textShadow">{{post.title}}</h2>

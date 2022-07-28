@@ -44,6 +44,14 @@ window.addEventListener('load', function () {
   };
 
   typingEffect();  
-}, 
+  
+  function lockScroll() {
+    console.log('yep clicked');
+    document.documentElement.classList.toggle("scrollLock");
+  }
 
+  document.querySelector('.mobileNavCheckbox').addEventListener("click", lockScroll)
+
+// Don't delete below this
+}, 
 false);

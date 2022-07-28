@@ -65,6 +65,10 @@ p, h1, h2, h3, h4, h5, h6 {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(166.44deg, #4E71CD 9.72%, rgba(132, 157, 220, 0.692708) 81.36%, rgba(255, 255, 255, 0) 139.48%);
   color: white;
@@ -228,6 +232,21 @@ ul, li {
   display: none;
 }
 
+.pageHeader {
+  padding-top: 100px;
+}
+@media (min-width: 1024px) {
+  .pageHeader {
+    margin-top: 0;
+  }
+}
+
+.scrollLock {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 .navBar {
   display: none;
   justify-content: space-between;
@@ -364,6 +383,7 @@ ul, li {
   position: relative;
   z-index: 1;
   width: 300px;
+  overflow: hidden;
 }
 .mobileNavContainer .mobileMenuItems li {
   margin-bottom: 1.2rem;

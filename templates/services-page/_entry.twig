@@ -1,6 +1,6 @@
 {% extends "_layouts/main" %}
 {% block main %}
-  <h2 class="textShadow">What I can do for you...</h2>
+  <h2 class="pageHeader textShadow">What I can do for you...</h2>
   <div class="serviceCards">
     {% for block in entry.serviceCards.all() %}
     {% set image = block.icon.one() %}
