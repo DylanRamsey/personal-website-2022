@@ -53,8 +53,15 @@ window.addEventListener('load', function () {
   document.querySelector('.mobileNavCheckbox').addEventListener("click", lockScroll)
 
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+    },
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -66,9 +73,16 @@ window.addEventListener('load', function () {
     },
   });
 
-  var swiper = new Swiper(".blogSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+  var swiper = new Swiper(".portfolioSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 200,
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+    },
     loop: true,
     speed: 1000,
     pagination: {
@@ -82,7 +96,15 @@ window.addEventListener('load', function () {
   });
 
   var swiper = new Swiper(".testimonialSwiper", {
-    slidesPerView: 1.9,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1.9,
+        spaceBetween: 30
+      },
+    },
     spaceBetween: 90,
     loop: true,
     centeredSlides: true,
