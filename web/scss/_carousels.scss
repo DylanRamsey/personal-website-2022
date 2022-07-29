@@ -1,0 +1,22 @@
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
