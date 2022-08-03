@@ -76,6 +76,14 @@ ul,li {
   text-shadow: $textShadow;
 }
 
+button {
+  background: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+}
+
 .italic {
   font-style: italic;
 }
@@ -168,6 +176,7 @@ ul,li {
 .pageHeader {
   @media (min-width: $desktop) {
     margin-top: 0;
+    padding-top: unset;
   }
   padding-top: 100px;
 }

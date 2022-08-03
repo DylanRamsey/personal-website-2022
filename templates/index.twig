@@ -95,17 +95,24 @@
     <div class="postHeroHeader centerText textShadow">
       <h3>Here are a few great companies I've been employed with</h3>
     </div>
-    <div id="vapp">
-      <div class="experienceCard flex">
-        <div class="employedBy">
-          <h5 v-for="employeers in employeers">
-          </h5>
+      <div class="experienceCard">
+        <div class="employedBy" role="tablist" aria-label="Employers">
+          <button role="tab" class="employeer" aria-selected="true" id="Imarc">Imarc</button>
+          <button role="tab" class="employeer" aria-selected="false" id="Accrisoft">Accrisoft</button>          
+          <button role="tab" class="employeer" aria-selected="false" id="DigiSphere">DigiSphere</button>
         </div>
-        <div class="employedDescription">
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe voluptas dicta magnam libero, facilis, cum voluptatibus accusantium consequatur, deleniti fugiat sit odit. Aliquid temporibus delectus placeat accusamus assumenda reprehenderit.</div>
+        <div class="employedDescriptionList">
+          <div class="employedDescription" role="tabpanel" aria-labelledby="Imarc">
+              <p>Where I currently work as part of team Zenith maintaining the Breezeline Project</p>
+          </div>
+          <div class="employedDescription" role="tabpanel" aria-labelledby="Accrisoft" hidden>
+              <p>this was another job</p>
+          </div>
+          <div class="employedDescription" role="tabpanel" aria-labelledby="DigiSphere" hidden>
+              <p>This Was my First Job</p>
+          </div>
         </div>
       </div>
-    </div>
   </section>
   <section>
     <div class="postHeroHeader centerText textShadow">

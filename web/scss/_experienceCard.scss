@@ -6,32 +6,60 @@
 .experienceCard {
   @media (min-width: $widescreen) {
     width: 53.3125rem;
-    height: 19.8125rem;
+    min-height: 300px;
+    display: grid;
   }
+ 
+  grid-template-columns: 1fr 2fr;
   background: linear-gradient(117.27deg, #15153b -43.24%, rgba(137, 190, 239, 0.1) 112.39%, rgba(255, 255, 255, 0) 112.41%);
   border: solid white 0.1875rem;
   border-radius: 1.25rem;
-
   margin: auto;
   width: 20rem;
   max-width: 100%;
 
+  .employedDescriptionList {
+    @media (min-width: $widescreen) {
+
+    } 
+    min-height: 200px;
+  }
   .employedBy {
-    max-width: 15.4375rem;
     width: 100%;
     padding-top: 2.5rem;
-    padding-left: 2.1875rem;
+    border-right: 2px solid white;
+
+    .employeer {
+      border-top: solid 2px white;
+      width: 100%;
+      padding: 10px;
+
+      &:last-child {
+        border-bottom: solid 2px white;
+      }
+    }
+
+    button {
+      color: white;
+
+      &[aria-selected="true"] {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(166.44deg, #84a0e8 9.72%, rgb(22 40 86 / 83%) 81.36%, rgba(255, 255, 255, 0) 139.48%);
+      }
+    }
   }
   
   .employedDescription {
     @media (min-width: $widescreen) {
       padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
       padding-left: 50px;
       padding-right: 50px;
     }
-    border-left: solid 3px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 37.5rem;
     width: 100%;
   }
 }
-
