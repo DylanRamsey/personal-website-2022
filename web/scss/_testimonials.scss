@@ -1,10 +1,13 @@
 .testimonial {
+  @media (min-width: $widescreen) {
+    height: 19.8125rem;
+  }
   background: linear-gradient(117.27deg, #1d336a -43.24%, rgba(137, 190, 239, 0.1) 112.39%, rgba(255, 255, 255, 0) 112.41%);
   border-radius: 1.25rem;
   border: 0.1875rem solid rgba(255, 255, 255, 1);
   display: flex;
   flex-flow: column;
-  height: 19.8125rem;
+
   justify-content: center;
   max-width: 100%;
   padding: 0 1.875rem;

@@ -13,6 +13,10 @@
   justify-content: space-evenly;
 
   .heroContent {
+    @media (min-width: $desktop) {
+      margin-top: unset;
+    }
+    margin-top: 4rem;
     width: 39.0625rem;
     max-width: 100%;
   

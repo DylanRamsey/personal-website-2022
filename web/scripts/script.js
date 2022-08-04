@@ -82,7 +82,7 @@ window.addEventListener('load', function () {
 
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 40,
     breakpoints: {
       // when window width is >= 480px
       480: {
@@ -124,7 +124,7 @@ window.addEventListener('load', function () {
   });
 
   var swiper = new Swiper(".testimonialSwiper", {
-    slidesPerView: 1,
+    slidesPerView: 1.1,
     spaceBetween: 30,
     breakpoints: {
       // when window width is >= 480px
@@ -133,7 +133,7 @@ window.addEventListener('load', function () {
         spaceBetween: 30
       },
     },
-    spaceBetween: 90,
+    spaceBetween: 120,
     loop: true,
     centeredSlides: true,
     speed: 1000,
@@ -146,6 +146,8 @@ window.addEventListener('load', function () {
       disableOnInteraction: false,
     },
   });
+
+  document.querySelector(".currentYear").innerHTML = new Date().getFullYear();
 
 
 // Don't delete below this

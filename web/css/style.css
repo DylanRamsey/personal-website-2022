@@ -214,7 +214,7 @@ button {
   border-radius: 5px;
   border: 3px solid #FFFFFF;
   color: white;
-  display: inline-flex;
+  display: flex;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -226,6 +226,10 @@ button {
 }
 .button p {
   filter: none;
+}
+.button a {
+  color: white;
+  text-decoration: none;
 }
 
 .radiusTwentyFive {
@@ -445,8 +449,14 @@ button {
   }
 }
 .hero .heroContent {
+  margin-top: 4rem;
   width: 39.0625rem;
   max-width: 100%;
+}
+@media (min-width: 1024px) {
+  .hero .heroContent {
+    margin-top: unset;
+  }
 }
 .hero .heroContent .heroMainContent {
   margin-bottom: 4.5rem;
@@ -775,11 +785,15 @@ button {
   border: 0.1875rem solid white;
   display: flex;
   flex-flow: column;
-  height: 19.8125rem;
   justify-content: center;
   max-width: 100%;
   padding: 0 1.875rem;
   width: 53.3125rem;
+}
+@media (min-width: 1440px) {
+  .testimonial {
+    height: 19.8125rem;
+  }
 }
 
 .testimonialCopy {
