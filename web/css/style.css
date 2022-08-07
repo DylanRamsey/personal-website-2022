@@ -154,6 +154,10 @@ button {
   -moz-appearance: none;
   border: none;
 }
+button :active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 .italic {
   font-style: italic;
@@ -220,9 +224,14 @@ button {
   font-weight: 500;
   height: 62px;
   justify-content: center;
-  margin: 20px auto;
+  margin: 0 auto;
   text-align: center;
   padding: 0 20px;
+}
+@media (min-width: 1024px) {
+  .button {
+    margin: 60px auto;
+  }
 }
 .button p {
   filter: none;
@@ -541,58 +550,18 @@ button {
   margin: auto;
 }
 
-.breezelineLogo {
-  background-image: url("/assets/breezeline.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 14.75rem;
-  width: 28.25rem;
+.companyCard {
+  background: white;
+  border-radius: 8px;
+  width: 332px;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
-
-.islandfinLogo {
-  background-image: url("/assets/island-fin.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 11.125rem;
-  width: 22.8125rem;
-}
-
-.borlaLogo {
-  background-image: url("/assets/borla.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 4.375rem;
-  width: 16.875rem;
-}
-
-.blackDogLeashesLogo {
-  background-image: url("/assets/black-dog-leashes.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 15rem;
-  width: 15rem;
-}
-
-.srqCustomsLogo {
-  background-image: url("/assets/srq-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 7.125rem;
-  width: 10rem;
-}
-
-.rapvLogo {
-  background-image: url("/assets/rapv-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 150px;
-  width: 265px;
+.companyCard img {
+  max-width: 250px;
+  object-fit: contain;
 }
 
 .experience {
@@ -604,14 +573,14 @@ button {
   grid-template-columns: 1fr 2fr;
   background: linear-gradient(117.27deg, #15153b -43.24%, rgba(137, 190, 239, 0.1) 112.39%, rgba(255, 255, 255, 0) 112.41%);
   border: solid white 0.1875rem;
-  border-radius: 1.25rem;
+  border-radius: 0.5rem;
   margin: auto;
   width: 20rem;
   max-width: 100%;
 }
 @media (min-width: 1440px) {
   .experienceCard {
-    width: 53.3125rem;
+    width: 60.5rem;
     min-height: 300px;
     display: grid;
   }
@@ -619,15 +588,27 @@ button {
 .experienceCard .employedDescriptionList {
   min-height: 200px;
 }
+@media (min-width: 1440px) {
+  .experienceCard .employedDescriptionList {
+    border-left: solid 2px white;
+  }
+}
 .experienceCard .employedBy {
   width: 100%;
-  padding-top: 2.5rem;
-  border-right: 2px solid white;
+  margin: auto;
 }
 .experienceCard .employedBy .employeer {
   border-top: solid 2px white;
   width: 100%;
   padding: 10px;
+}
+.experienceCard .employedBy .employeer:first-child {
+  border-top: none;
+}
+@media (min-width: 1440px) {
+  .experienceCard .employedBy .employeer:first-child {
+    border-top: solid 2px white;
+  }
 }
 .experienceCard .employedBy .employeer:last-child {
   border-bottom: solid 2px white;
@@ -760,23 +741,39 @@ button {
   display: flex;
   flex-flow: column;
   margin-bottom: 50px;
+  align-items: center;
+  justify-content: space-around;
 }
 @media (min-width: 1024px) {
   .standards .standard {
     margin-bottom: 0;
+    height: 400px;
   }
 }
 .standards .standard h4 {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
+@media (min-width: 1024px) {
+  .standards .standard h4 {
+    font-size: 1.75rem;
+  }
+}
 .standards .standard img {
   margin: auto;
   width: 247.33px;
 }
+.standards .standard svg {
+  width: 250px;
+}
 
 .services {
-  margin: 85px auto;
+  margin: 50px auto;
+}
+@media (min-width: 1440px) {
+  .services {
+    margin: 85px auto;
+  }
 }
 
 .testimonial {
@@ -787,7 +784,7 @@ button {
   flex-flow: column;
   justify-content: center;
   max-width: 100%;
-  padding: 0 1.875rem;
+  padding: 1rem 1.875rem;
   width: 53.3125rem;
 }
 @media (min-width: 1440px) {

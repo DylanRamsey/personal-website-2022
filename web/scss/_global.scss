@@ -82,6 +82,11 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   border: none;
+
+  :active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 }
 
 .italic {
@@ -135,6 +140,9 @@ button {
 }
 
 .button {
+  @media (min-width: $desktop) {
+    margin: 60px auto;
+  }
   align-items: center;
   background: linear-gradient(117.27deg, #15153b -43.24%, rgba(137, 190, 239, 0.1) 112.39%, rgba(255, 255, 255, 0) 112.41%);
   max-width: 100%;
@@ -147,7 +155,7 @@ button {
   font-weight: 500;
   height: 62px;
   justify-content: center;
-  margin: 20px auto;
+  margin: 0 auto;
   text-align: center;
   padding: 0 20px;
 
@@ -159,6 +167,8 @@ button {
     color: white;
     text-decoration: none;
   }
+
+
 }
 
 .radiusTwentyFive {

@@ -1,3 +1,6 @@
 .services {
-  margin: 85px auto;
+  @media (min-width: $widescreen) {
+    margin: 85px auto;
+  }
+  margin: 50px auto;
 }

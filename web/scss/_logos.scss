@@ -1,53 +1,13 @@
-.breezelineLogo {
-  background-image: url("/assets/breezeline.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 14.75rem;
-  width: 28.25rem;
-}
-
-.islandfinLogo {
-  background-image: url("/assets/island-fin.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 11.125rem;
-  width: 22.8125rem;
-}
-
-.borlaLogo {
-  background-image: url("/assets/borla.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 4.375rem;
-  width: 16.875rem;
-}
-
-.blackDogLeashesLogo {
-  background-image: url("/assets/black-dog-leashes.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 15rem;
-  width: 15rem;
-}
-
-.srqCustomsLogo {
-  background-image: url("/assets/srq-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 7.125rem;
-  width: 10rem;
-}
-
-.rapvLogo {
-  background-image: url("/assets/rapv-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 150px;
-  width: 265px;
+.companyCard {
+  background: white;
+  border-radius: 8px;
+  width: 332px;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  img {
+    max-width: 250px;
+    object-fit: contain;
+  }
 }

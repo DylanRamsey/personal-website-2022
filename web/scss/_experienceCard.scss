@@ -5,7 +5,7 @@
 
 .experienceCard {
   @media (min-width: $widescreen) {
-    width: 53.3125rem;
+    width: 60.5rem;
     min-height: 300px;
     display: grid;
   }
@@ -13,26 +13,32 @@
   grid-template-columns: 1fr 2fr;
   background: linear-gradient(117.27deg, #15153b -43.24%, rgba(137, 190, 239, 0.1) 112.39%, rgba(255, 255, 255, 0) 112.41%);
   border: solid white 0.1875rem;
-  border-radius: 1.25rem;
+  border-radius: 0.5rem;
   margin: auto;
   width: 20rem;
   max-width: 100%;
 
   .employedDescriptionList {
     @media (min-width: $widescreen) {
-
+      border-left: solid 2px white;
     } 
     min-height: 200px;
   }
   .employedBy {
     width: 100%;
-    padding-top: 2.5rem;
-    border-right: 2px solid white;
+    margin: auto;
 
     .employeer {
       border-top: solid 2px white;
       width: 100%;
       padding: 10px;
+
+      &:first-child {
+        @media (min-width: $widescreen) {
+          border-top: solid 2px white;
+        }
+        border-top: none;
+      }
 
       &:last-child {
         border-bottom: solid 2px white;
