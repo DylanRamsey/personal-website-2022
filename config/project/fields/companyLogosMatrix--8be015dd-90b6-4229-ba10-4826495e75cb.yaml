@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: a992fd09-6bb3-493f-9e5b-e480e9ca07f1 # Common
+handle: companyLogosMatrix
+instructions: null
+name: 'Company Logos Matrix'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_companylogosmatrix}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

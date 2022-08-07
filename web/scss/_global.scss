@@ -102,12 +102,19 @@ button {
 }
 
 .container {
-  @media (min-width: $desktop) {
-    width: $deskTopContainer;
-  }
   margin: auto;
   width: $phoneContainer;
   max-width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 600px;
+  }
+  
+  @media (min-width: $desktop) {
+    width: $deskTopContainer;
+  }
+
+
 }
 
 .centerText {

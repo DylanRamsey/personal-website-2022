@@ -1,0 +1,69 @@
+field: 8be015dd-90b6-4229-ba10-4826495e75cb # Company Logos Matrix
+fieldLayouts:
+  2a2a19bd-f825-4f82-a7ac-652c1f12085c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 22a2fe98-21f0-4545-9064-34de25a66fec # Logo Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 304be539-8388-4c96-9b0d-483181804c46
+            warning: null
+            width: 100
+        name: Content
+        uid: cb942687-c6d9-488f-a06f-677b28bbba04
+fields:
+  22a2fe98-21f0-4545-9064-34de25a66fec: # Logo Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: logoImage
+    instructions: null
+    name: 'Logo Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:4b938d7b-1055-4d7b-aad0-c5bc40947750' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:4b938d7b-1055-4d7b-aad0-c5bc40947750' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: companyLogos
+name: 'Company logos'
+sortOrder: 1

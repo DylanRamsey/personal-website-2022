@@ -176,6 +176,11 @@ button :active {
   width: 340px;
   max-width: 100%;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 600px;
+  }
+}
 @media (min-width: 1024px) {
   .container {
     width: 1230px;

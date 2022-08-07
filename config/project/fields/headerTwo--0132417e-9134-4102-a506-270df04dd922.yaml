@@ -1,0 +1,19 @@
+columnSuffix: jcucgqjz
+contentColumnType: text
+fieldGroup: 7f8fd7db-5902-47b3-9a58-c47f26ad5cc9 # Page Headers
+handle: headerTwo
+instructions: null
+name: 'Header 2'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

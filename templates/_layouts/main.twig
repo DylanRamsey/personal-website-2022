@@ -17,8 +17,7 @@
   <script src="scripts/vue.js"></script>
 </head>
 <body> 
-  <div class="container">
-    <nav class="navBar">
+    <nav class="navBar container">
       <ul class="navBarRoutes">
         {% for navItem in navigation.navigation %}
           <li><a href="{{ navItem.navigationUrl }}">{{ navItem.navigationLabel }}</a></li>

@@ -1,4 +1,4 @@
-dateModified: 1657401878
+dateModified: 1659850616
 email:
   fromEmail: dylanbradramsey@gmail.com
   fromName: 'Dylan Ramsey'
@@ -17,8 +17,11 @@ meta:
     4b938d7b-1055-4d7b-aad0-c5bc40947750: Images # Images
     5dc12c22-ee64-469d-846e-5091ddc2e3b3: 'Single Image' # Single Image
     6a7656ff-a820-4b7b-ab00-2204f6a159bc: Author # Author
+    7f8fd7db-5902-47b3-9a58-c47f26ad5cc9: 'Page Headers' # Page Headers
+    8be015dd-90b6-4229-ba10-4826495e75cb: 'Company Logos Matrix' # Company Logos Matrix
     8f9647af-f7e4-4f55-8788-f7b7cbc8fbda: Date # Date
     9b7ac66d-c8ff-477b-9546-2d00f7b17fb7: 'Services Page' # Services Page
+    22a2fe98-21f0-4545-9064-34de25a66fec: 'Logo Image' # Logo Image
     38dbc41b-503c-45a2-8a47-202f185327c8: Icon # Icon
     57e4fbeb-d9f9-4628-a9e6-35b1301f1aa2: 'Single Blog Post' # Single Blog Post
     67dd4237-b6c2-4968-a0db-09c544257c2f: 'Post Content' # Post Content
@@ -30,7 +33,9 @@ meta:
     06179a13-0bb0-4edf-8b2c-4c659107d4f6: 'Blog Post List' # Blog Post List
     9556f1c2-777d-42c7-875e-3250a592baac: Navigation # Navigation
     0079526e-4159-4f6d-80b8-03c0075865d9: Navigation # Navigation
+    0132417e-9134-4102-a506-270df04dd922: 'Header 2' # Header 2
     a77ee0fa-2c38-42e6-ade5-e78e19c914d6: 'Portfolio Post List' # Portfolio Post List
+    a500f030-ccf3-49fc-bdc2-f04140624602: 'Company logos' # Company logos
     a574e5ad-1c70-43fe-8ca6-952d386c928a: 'Portfolio Post List' # Portfolio Post List
     a892eb79-73bf-4774-af27-7b50a400543f: 'About Page' # About Page
     a992fd09-6bb3-493f-9e5b-e480e9ca07f1: Common # Common

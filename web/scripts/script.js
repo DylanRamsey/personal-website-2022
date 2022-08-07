@@ -71,8 +71,6 @@ window.addEventListener('load', function () {
 
   typingEffect();  
 
-  
-  
   function lockScroll() {
     console.log('yep clicked');
     document.documentElement.classList.toggle("scrollLock");
@@ -80,12 +78,12 @@ window.addEventListener('load', function () {
 
   document.querySelector('.mobileNavCheckbox').addEventListener("click", lockScroll)
 
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".workedWithSlider", {
     slidesPerView: 1,
     spaceBetween: 40,
     breakpoints: {
       // when window width is >= 480px
-      480: {
+      1024: {
         slidesPerView: 3,
         spaceBetween: 30
       },
@@ -106,7 +104,7 @@ window.addEventListener('load', function () {
     spaceBetween: 200,
     breakpoints: {
       // when window width is >= 480px
-      480: {
+      1024: {
         slidesPerView: 3,
         spaceBetween: 30
       },
@@ -146,10 +144,7 @@ window.addEventListener('load', function () {
       disableOnInteraction: false,
     },
   });
-
   document.querySelector(".currentYear").innerHTML = new Date().getFullYear();
-
-
 // Don't delete below this
 }, 
 false);

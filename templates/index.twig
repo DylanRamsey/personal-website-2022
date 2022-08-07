@@ -1,6 +1,6 @@
 {% extends "_layouts/main" %}
 {% block main %}
-    <main class="hero">
+    <main class="hero container">
       <div class="heroContent">
         <div class="heroMainContent">
           <h1 class="">{{ entry.mainHeader}}</h1>
@@ -51,59 +51,32 @@
     <section>
       <span id="heroAnchor">&nbsp;</span>
       <div class="postHeroHeader container centerText">
-        <h3>I'm a Florida based developer, with work that reaches across the world 🌎</h3>
+        <h3>{{ entry.headerTwo }}</h3>
         <h3>Here are a few of the largest companies I've worked with</h3>
       </div>
     </section>
-  </div>
+
+  <!-- Add in fields for links, alt attrs, and aria-labels -->
   <section>
-    <div class="swiper mySwiper">
+    <div class="swiper workedWithSlider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="https://www.breezeline.com/" target="_blank">
-            <div class="companyCard" aria-label="Breezeline Logo">
-              <img src="/assets/breezeline.png" />
-            </div>
+        {% for block in entry.companyLogosMatrix.all() %}
+        {% set image = block.logoImage.one() %}
+        <div class="swiper-slide" aria-label="">
+          <a href="/" target="_blank">
+            {% if image %}
+              <figure class="companyCard">
+                <img src="{{ image.url }}"  alt="" />
+              </figure>
+            {% endif %}
           </a>
         </div>
-        <div class="swiper-slide">
-          <a href="https://www.islandfinpoke.com/" target="_blank">
-            <div class="companyCard" aria-label="Islandfin Poke Logo">
-              <img src="/assets/island-fin.png" />              
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide" aria-label="Borla Logo">
-          <a href="https://www.borla.com/" target="_blank">
-            <div class="companyCard">
-                <img src="/assets/borla.png" />   
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="https://blackdogleashes.com/" target="_blank">
-            <div class="companyCard">
-              <img src="/assets/black-dog-leashes.png" />               
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="https://srqcustoms.com/" target="_blank">
-            <div class="companyCard">
-              <img src="/assets/srq-logo.png" />               
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="https://www.rapv.com/" target="_blank">
-            <div class="companyCard">
-              <img src="/assets/rapv-logo.png" />               
-            </div>
-          </a>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
+
+
   <section class="experience">
     <div class="postHeroHeader container centerText">
       <h3>Here are a few great companies I've been employed with</h3>
