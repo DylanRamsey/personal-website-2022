@@ -1,0 +1,132 @@
+field: 48074489-84bb-4624-be40-a8e552d3614e # Experience Card Matrix
+fieldLayouts:
+  a55e2f25-c6ab-48b2-8941-53552afa1dbf:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 54154da7-c13c-48c7-b57d-9d5f2ec188f5 # Employeer
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 88d6e6d0-0332-4476-b11f-e7b2d7dc306f
+            warning: null
+            width: 100
+          -
+            fieldUid: 13ff6ec7-5c5b-45e2-adb6-50d81eadb2ce # Job Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb22812a-98b7-4854-a5fc-44e239de69b2
+            warning: null
+            width: 100
+          -
+            fieldUid: c2991fb3-161b-43e8-9290-21a5d7975694 # Time worked here
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c46aa80-2bd1-4453-833f-a81e248fd05f
+            warning: null
+            width: 100
+          -
+            fieldUid: f9c3e8af-b0cc-46f7-bd8b-771f97578552 # Job Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ed127cd-ac99-4b91-9382-8c9087b6a3b8
+            warning: null
+            width: 100
+        name: Content
+        uid: e35fe38b-4dd8-4d8f-906b-3605c676f7c0
+fields:
+  13ff6ec7-5c5b-45e2-adb6-50d81eadb2ce: # Job Title
+    columnSuffix: prtgxcdz
+    contentColumnType: text
+    fieldGroup: null
+    handle: jobTitle
+    instructions: null
+    name: 'Job Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  54154da7-c13c-48c7-b57d-9d5f2ec188f5: # Employeer
+    columnSuffix: iwduoocj
+    contentColumnType: text
+    fieldGroup: null
+    handle: employeer
+    instructions: null
+    name: Employeer
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c2991fb3-161b-43e8-9290-21a5d7975694: # Time worked here
+    columnSuffix: pmovxavz
+    contentColumnType: text
+    fieldGroup: null
+    handle: timeWorkedHere
+    instructions: null
+    name: 'Time worked here'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f9c3e8af-b0cc-46f7-bd8b-771f97578552: # Job Description
+    columnSuffix: zoruwnsi
+    contentColumnType: text
+    fieldGroup: null
+    handle: jobDescription
+    instructions: null
+    name: 'Job Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: jobs
+name: jobs
+sortOrder: 2

@@ -74,31 +74,33 @@
         {% endfor %}
       </div>
     </div>
-  </section>
-
-
+  </section> 
+  
   <section class="experience">
+    {% for block in entry.experienceCardMatrix.all() %}
     <div class="postHeroHeader container centerText">
-      <h3>Here are a few great companies I've been employed with</h3>
+      {% if block.header is defined %}
+      <h3>{{ block.header }}</h3>
+      {% endif %}
     </div>
+    {% endfor %}
       <div class="experienceCard">
         <div class="employedBy" role="tablist" aria-label="Employers">
-          <button role="tab" class="employeer" aria-selected="true" id="Imarc">Imarc</button>
-          <button role="tab" class="employeer" aria-selected="false" id="Accrisoft">Accrisoft</button>          
-          <button role="tab" class="employeer" aria-selected="false" id="DigiSphere">DigiSphere</button>
+          {% for block in entry.experienceCardMatrix.all() %}
+            <button role="tab" class="employeer" aria-selected="false" id="{{ block.employeer }}">{{ block.employeer }}</button>
+          {% endfor %}
         </div>
         <div class="employedDescriptionList">
-          <div class="employedDescription" role="tabpanel" aria-labelledby="Imarc">
-              <p>Where I currently work as part of team Zenith maintaining the Breezeline Project</p>
-          </div>
-          <div class="employedDescription" role="tabpanel" aria-labelledby="Accrisoft" hidden>
-              <p>this was another job</p>
-          </div>
-          <div class="employedDescription" role="tabpanel" aria-labelledby="DigiSphere" hidden>
-              <p>This Was my First Job</p>
-          </div>
+          {% for block in entry.experienceCardMatrix.all() %}
+            <div class="employedDescription" role="tabpanel" aria-labelledby="{{ block.employeer }}" hidden>
+                  <h4>{{ block.jobTitle }}</h4> 
+                  <h5>{{ block.timeWorkedHere }}</h5>
+                  <p>{{ block.jobDescription }}</p>
+            </div>
+          {% endfor %}
         </div>
       </div>
+      
   </section>
   <section>
     <div class="postHeroHeader container centerText">

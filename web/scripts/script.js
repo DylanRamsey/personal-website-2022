@@ -3,7 +3,9 @@ window.addEventListener('load', function () {
   const tabs = document.querySelector('.experienceCard');
   const tabButtons = tabs.querySelectorAll('[role="tab"]');
   const tabPanels = Array.from(tabs.querySelectorAll('[role="tabpanel"]'));
-  
+  document.querySelector('.employeer:first-child').setAttribute('aria-selected', true);
+
+
   function handleTabClick(event) {
     tabPanels.forEach(panel => {
       panel.hidden = true;

@@ -632,6 +632,12 @@ button :active {
   max-width: 37.5rem;
   width: 100%;
 }
+.experienceCard .employedDescription h4 {
+  margin-bottom: 0;
+}
+.experienceCard .employedDescription h5 {
+  margin-bottom: 0.2rem;
+}
 @media (min-width: 1440px) {
   .experienceCard .employedDescription {
     padding-top: 2.5rem;

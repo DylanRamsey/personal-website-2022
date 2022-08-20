@@ -1,0 +1,42 @@
+field: 48074489-84bb-4624-be40-a8e552d3614e # Experience Card Matrix
+fieldLayouts:
+  abb9aef6-692b-44bd-a5de-9078bf9fda20:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a359518c-fc75-467c-88af-b3cd2ef48ab1 # Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41f6d1d7-b09e-452c-8cf9-2c9968e6e0f4
+            warning: null
+            width: 100
+        name: Content
+        uid: 1f16cd38-2662-4f8f-825d-1c0348d89e00
+fields:
+  a359518c-fc75-467c-88af-b3cd2ef48ab1: # Header
+    columnSuffix: vccnyncf
+    contentColumnType: text
+    fieldGroup: null
+    handle: header
+    instructions: null
+    name: Header
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: experienceCardHeading
+name: 'Experience Card Heading'
+sortOrder: 1

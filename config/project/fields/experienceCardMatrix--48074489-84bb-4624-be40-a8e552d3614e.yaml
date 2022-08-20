@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 6ad05d66-0912-44a3-a538-9601fdbcfbc9 # Components
+handle: experienceCardMatrix
+instructions: null
+name: 'Experience Card Matrix'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_experiencecardmatrix}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
